@@ -1,0 +1,19 @@
+.container {
+    max-width: 800px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    margin-top: 0.5rem;
+  }
+  

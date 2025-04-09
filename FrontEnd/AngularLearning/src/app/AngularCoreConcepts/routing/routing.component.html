@@ -1,0 +1,75 @@
+<div class="container mt-4">
+  <h2 class="text-primary">🔹 Angular Concept: Routing</h2>
+
+  <!-- Overview Card -->
+  <div class="card shadow-sm mb-4 border-info">
+    <div class="card-body">
+      <h5 class="card-title text-info">What is Routing in Angular?</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Routing allows navigation between different components.</li>
+        <li class="list-group-item">Defined in <code>app-routing.module.ts</code> with path-component mappings.</li>
+        <li class="list-group-item">Supports parameters, nested routes, and lazy loading.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tabs Header -->
+  <div class="mb-2">
+    <h5 class="text-secondary">🧪 Explore Routing Examples</h5>
+  </div>
+
+  <!-- Routing Tabs -->
+  <ul class="nav nav-tabs mb-3">
+    <li class="nav-item">
+      <a class="nav-link" [class.active]="selectedTab === 'basic'" (click)="selectedTab = 'basic'">Basic Routing</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [class.active]="selectedTab === 'params'" (click)="selectedTab = 'params'">Route Parameters</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [class.active]="selectedTab === 'nested'" (click)="selectedTab = 'nested'">Nested Routes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [class.active]="selectedTab === 'wildcard'" (click)="selectedTab = 'wildcard'">Wildcard / Redirect</a>
+    </li>
+  </ul>
+
+  <!-- Tab Contents -->
+  <div *ngIf="selectedTab === 'basic'" class="card p-3 shadow-sm border-primary">
+    <h5>Basic Routing Example</h5>
+    <p>Use <code>&lt;a routerLink="/home"&gt;Home&lt;/a&gt;</code> to navigate.</p>
+    <p><strong>Router Setup:</strong></p>
+    <pre><code>const routes: Routes = [
+  &#123; path: 'home', component: HomeComponent &#125;
+];</code></pre>
+  </div>
+
+  <div *ngIf="selectedTab === 'params'" class="card p-3 shadow-sm border-success">
+    <h5>Route Parameters</h5>
+    <p>Use <code>routerLink="/user/42"</code> and read with <code>ActivatedRoute</code>.</p>
+    <pre><code>this.route.snapshot.paramMap.get('id');</code></pre>
+  </div>
+
+  <div *ngIf="selectedTab === 'nested'" class="card p-3 shadow-sm border-warning">
+    <h5>Nested Routing</h5>
+    <p>Child routes are defined under a parent route:</p>
+    <pre><code>const routes: Routes = [
+  &#123;
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
+      &#123; path: 'stats', component: StatsComponent &#125;
+    ]
+  &#125;
+];</code></pre>
+  </div>
+
+  <div *ngIf="selectedTab === 'wildcard'" class="card p-3 shadow-sm border-info">
+    <h5>Wildcard &amp; Redirects</h5>
+    <p>Redirect unknown routes or define default path:</p>
+    <pre><code>const routes: Routes = [
+  &#123; path: '', redirectTo: '/home', pathMatch: 'full' &#125;,
+  &#123; path: '**', component: PageNotFoundComponent &#125;
+];</code></pre>
+  </div>
+</div>

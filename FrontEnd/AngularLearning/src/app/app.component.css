@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  ul.concept-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .concept-list li a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .concept-list li a:hover {
+    background-color: #0056b3;
+  }
+  

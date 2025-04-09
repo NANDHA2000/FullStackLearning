@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SqlServerLearning", "SqlServerLearning.sqlproj", "{77D87A6B-65B7-424D-AC01-7E5DD7AA17CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77D87A6B-65B7-424D-AC01-7E5DD7AA17CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D87A6B-65B7-424D-AC01-7E5DD7AA17CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D87A6B-65B7-424D-AC01-7E5DD7AA17CE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{77D87A6B-65B7-424D-AC01-7E5DD7AA17CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D87A6B-65B7-424D-AC01-7E5DD7AA17CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D87A6B-65B7-424D-AC01-7E5DD7AA17CE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0629B590-7F6B-43CF-AB83-CEB30E21AC03}
+	EndGlobalSection
+EndGlobal

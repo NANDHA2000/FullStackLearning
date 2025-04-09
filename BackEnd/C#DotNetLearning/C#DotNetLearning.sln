@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#DotNetLearning", "C#DotNetLearning.csproj", "{38332DB5-DB92-475F-A8F6-80CAD8CCF934}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38332DB5-DB92-475F-A8F6-80CAD8CCF934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38332DB5-DB92-475F-A8F6-80CAD8CCF934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38332DB5-DB92-475F-A8F6-80CAD8CCF934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38332DB5-DB92-475F-A8F6-80CAD8CCF934}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78ACAA55-E1BB-42B0-8FE8-1321107CB7A2}
+	EndGlobalSection
+EndGlobal

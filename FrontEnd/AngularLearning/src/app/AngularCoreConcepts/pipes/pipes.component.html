@@ -1,0 +1,56 @@
+<div class="container mt-4">
+    <h2 class="text-success">🔹 Angular Concept: Pipes</h2>
+  
+    <div class="mb-4">
+      <p><strong>Pipes</strong> in Angular help transform data in the template.</p>
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Date Pipe:</strong> Formats date values.</li>
+        <li class="list-group-item"><strong>UpperCase/LowerCase Pipe:</strong> Changes text case.</li>
+        <li class="list-group-item"><strong>Currency Pipe:</strong> Formats currency values.</li>
+        <li class="list-group-item"><strong>Custom Pipe:</strong> Your own logic to transform data.</li>
+      </ul>
+    </div>
+  
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-3">
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="selectedTab === 'date'" (click)="selectedTab = 'date'">Date Pipe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="selectedTab === 'upper'" (click)="selectedTab = 'upper'">UpperCase Pipe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="selectedTab === 'currency'" (click)="selectedTab = 'currency'">Currency Pipe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="selectedTab === 'custom'" (click)="selectedTab = 'custom'">Custom Pipe</a>
+      </li>
+    </ul>
+  
+    <!-- Tab Contents -->
+    <div *ngIf="selectedTab === 'date'" class="card p-3">
+      <h5>Date Pipe Example</h5>
+      <p><strong>Today is:</strong> {{ today | date:'fullDate' }}</p>
+      <p><strong>Explanation:</strong> <code>{{ '{{ today | date:"fullDate" }}' }}</code> formats the date.</p>
+    </div>
+  
+    <div *ngIf="selectedTab === 'upper'" class="card p-3">
+      <h5>UpperCase Pipe Example</h5>
+      <p>{{ message | uppercase }}</p>
+      <p><strong>Explanation:</strong> <code>{{ '{{ message | uppercase }}' }}</code> transforms to upper case.</p>
+    </div>
+  
+    <div *ngIf="selectedTab === 'currency'" class="card p-3">
+      <h5>Currency Pipe Example</h5>
+      <p>Product Price: {{ price | currency:'INR' }}</p>
+      <p><strong>Explanation:</strong> <code>{{ '{{ price | currency:"INR" }}' }}</code> formats as Indian currency.</p>
+    </div>
+  
+    <div *ngIf="selectedTab === 'custom'" class="card p-3">
+      <h5>Custom Pipe Example</h5>
+      <p>Original: {{ 'angular is awesome' }}</p>
+      <p>Transformed: {{ 'angular is awesome' | capitalizeWords }}</p>
+      <p><strong>Explanation:</strong> Custom pipe to capitalize each word.</p>
+    </div>
+  </div>
+  

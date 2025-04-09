@@ -1,0 +1,79 @@
+<div class="container mt-4">
+  <h2 class="text-primary">📘 Angular Concept: Directives</h2>
+  <div class="mb-3">
+    <h5 class="text-secondary">📎 Types of Directives in Angular</h5>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <strong>Structural Directives:</strong> Modify the structure of the DOM by adding or removing elements (e.g., *ngIf, *ngFor).
+      </li>
+      <li class="list-group-item">
+        <strong>Attribute Directives:</strong> Change the appearance or behavior of an element (e.g., [ngStyle], [ngClass]).
+      </li>
+      <li class="list-group-item">
+        <strong>Component Directives:</strong> Custom components with their own view and logic.
+      </li>
+    </ul>
+  </div>
+
+  <div class="mb-2">
+    <h5 class="text-secondary">🧪 Explore Examples by Directive Type</h5>
+  </div>
+
+  <ul class="nav nav-tabs mb-3">
+    <li class="nav-item"><a class="nav-link" [class.active]="selectedTab === 'ngIf'" (click)="selectedTab = 'ngIf'">*ngIf</a></li>
+    <li class="nav-item"><a class="nav-link" [class.active]="selectedTab === 'ngFor'" (click)="selectedTab = 'ngFor'">*ngFor</a></li>
+    <li class="nav-item"><a class="nav-link" [class.active]="selectedTab === 'ngStyle'" (click)="selectedTab = 'ngStyle'">[ngStyle]</a></li>
+    <li class="nav-item"><a class="nav-link" [class.active]="selectedTab === 'ngClass'" (click)="selectedTab = 'ngClass'">[ngClass]</a></li>
+  </ul>
+
+  <!-- ngIf -->
+  <div *ngIf="selectedTab === 'ngIf'" class="card p-3">
+    <h5 class="card-title text-info">*ngIf Example</h5>
+    <button class="btn btn-primary mb-2" (click)="isVisible = !isVisible">Toggle Visibility</button>
+    <p *ngIf="isVisible">🎉 This content is conditionally visible!</p>
+    <ul>
+      <li><code>*ngIf="isVisible"</code> adds/removes the element from the DOM.</li>
+    </ul>
+  </div>
+
+  <!-- ngFor -->
+  <div *ngIf="selectedTab === 'ngFor'" class="card p-3">
+    <h5 class="card-title text-info">*ngFor Example</h5>
+    <ul>
+      <li *ngFor="let lang of languages">{{ lang }}</li>
+    </ul>
+    <ul>
+      <li><code>*ngFor="let lang of languages"</code> iterates over the list.</li>
+    </ul>
+  </div>
+
+  <!-- ngStyle -->
+  <div *ngIf="selectedTab === 'ngStyle'" class="card p-3">
+    <h5 class="card-title text-info">[ngStyle] Example</h5>
+    <p [ngStyle]="{ color: 'green', fontWeight: 'bold' }">Styled using <code>[ngStyle]</code>.</p>
+    <ul>
+      <li>Applies inline CSS dynamically using object syntax.</li>
+    </ul>
+  </div>
+
+<!-- ngClass -->
+<div *ngIf="selectedTab === 'ngClass'" class="card p-3">
+  <h5>[ngClass] Example</h5>
+
+  <!-- This text will toggle between green and red -->
+  <p [ngClass]="{ 'text-success': isGreen, 'text-danger': !isGreen }">
+    🎨 This text changes color dynamically.
+  </p>
+
+  <button class="btn btn-outline-secondary" (click)="isGreen = !isGreen">
+    Toggle Color
+  </button>
+
+  <p class="mt-2">
+    <strong>Explanation:</strong>
+    <code>[ngClass]</code> conditionally applies Bootstrap classes.
+  </p>
+</div>
+
+
+</div>

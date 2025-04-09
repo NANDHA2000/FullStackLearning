@@ -1,0 +1,267 @@
+<div class="page-wrapper d-flex justify-content-center">
+  <div class="container mt-4">
+    <h2 class="text-primary">🔹 Angular Concept: Data Binding</h2>
+
+    <!-- Binding Types Card -->
+    <div class="card shadow-sm mb-4 border-info">
+      <div class="card-body">
+        <h5 class="card-title text-info">Types of Data Binding in Angular</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Interpolation:</strong> Displays data from the component to
+            the view.
+          </li>
+          <li class="list-group-item">
+            <strong>Property Binding:</strong> Binds DOM properties to component
+            values.
+          </li>
+          <li class="list-group-item">
+            <strong>Event Binding:</strong> Listens to user events and executes
+            component methods.
+          </li>
+          <li class="list-group-item">
+            <strong>Two-Way Binding:</strong> Synchronizes data between the
+            component and view.
+          </li>
+          <li class="list-group-item">
+            <strong>Attribute Binding:</strong> Binds values to standard HTML
+            attributes.
+          </li>
+          <li class="list-group-item">
+            <strong>Class Binding:</strong> Adds or removes CSS classes
+            dynamically based on conditions.
+          </li>
+          <li class="list-group-item">
+            <strong>Style Binding:</strong> Dynamically sets inline styles on
+            elements.
+          </li>
+        </ul>
+
+        <button
+          class="btn btn-sm btn-outline-info mt-3"
+          (click)="showModal = !showModal"
+        >
+          {{
+            showModal
+              ? "Hide Binding Summary Table"
+              : "📋 Show Binding Summary Table"
+          }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal for Summary Table -->
+    <div class="modal fade show d-block" tabindex="-1" *ngIf="showModal">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content shadow-lg">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">🔍 Angular Data Binding Summary</h5>
+          </div>
+          <div class="modal-body">
+            <p-table
+              [value]="bindingSummary"
+              [paginator]="true"
+              [rows]="10"
+              [responsiveLayout]="'scroll'"
+              class="p-datatable-sm"
+            >
+              <ng-template pTemplate="header">
+                <tr>
+                  <th>Binding Type</th>
+                  <th>Syntax</th>
+                  <th>Direction</th>
+                  <th>Example</th>
+                </tr>
+              </ng-template>
+              <ng-template pTemplate="body" let-row>
+                <tr>
+                  <td>{{ row.type }}</td>
+                  <td>
+                    <code>{{ row.syntax }}</code>
+                  </td>
+                  <td>{{ row.direction }}</td>
+                  <td>
+                    <code>{{ row.example }}</code>
+                  </td>
+                </tr>
+              </ng-template>
+            </p-table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Binding Tabs Header -->
+    <div class="mb-2">
+      <h5 class="text-secondary">🧪 Explore Examples by Binding Type</h5>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-3">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'interpolation'"
+          (click)="selectedTab = 'interpolation'"
+        >
+          <i class="bi bi-code-slash me-1 text-primary"></i> Interpolation
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'property'"
+          (click)="selectedTab = 'property'"
+        >
+          <i class="bi bi-box-arrow-in-right me-1 text-success"></i> Property
+          Binding
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'event'"
+          (click)="selectedTab = 'event'"
+        >
+          <i class="bi bi-lightning me-1 text-warning"></i> Event Binding
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'twoway'"
+          (click)="selectedTab = 'twoway'"
+        >
+          <i class="bi bi-arrow-left-right me-1 text-danger"></i> Two-way
+          Binding
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'attribute'"
+          (click)="selectedTab = 'attribute'"
+        >
+          <i class="bi bi-sliders me-1 text-info"></i> Attribute Binding
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'class'"
+          (click)="selectedTab = 'class'"
+        >
+          <i class="bi bi-braces me-1 text-secondary"></i> Class Binding
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'style'"
+          (click)="selectedTab = 'style'"
+        >
+          <i class="bi bi-palette me-1 text-dark"></i> Style Binding
+        </a>
+      </li>
+    </ul>
+
+    <!-- Examples -->
+    <div
+      *ngIf="selectedTab === 'interpolation'"
+      class="card p-3 shadow-sm border-primary"
+    >
+      <h5>Interpolation Example</h5>
+      <p>Hello, {{ name || "Angular Learner" }}!</p>
+      <p>
+        <strong>Explanation:</strong> <code>{{ '{{ name }}' }}</code> binds a
+        variable to the template.
+      </p>
+    </div>
+
+    <div
+      *ngIf="selectedTab === 'property'"
+      class="card p-3 shadow-sm border-success"
+    >
+      <h5>Property Binding Example</h5>
+      <img [src]="imageUrl" alt="Angular Logo" height="60" />
+      <p>
+        <strong>Explanation:</strong> <code>[src]="imageUrl"</code> dynamically
+        binds an image source.
+      </p>
+    </div>
+
+    <div
+      *ngIf="selectedTab === 'event'"
+      class="card p-3 shadow-sm border-warning"
+    >
+      <h5>Event Binding Example</h5>
+      <button class="btn btn-success" (click)="showAlert()">Click Me</button>
+      <p>
+        <strong>Explanation:</strong> <code>(click)="showAlert()"</code> calls a
+        component method on click.
+      </p>
+    </div>
+
+    <div
+      *ngIf="selectedTab === 'twoway'"
+      class="card p-3 shadow-sm border-info"
+    >
+      <h5>Two-Way Binding Example</h5>
+      <input
+        [(ngModel)]="name"
+        class="form-control mb-2"
+        placeholder="Enter your name"
+      />
+      <p><strong>Output:</strong> Hello {{ name }}</p>
+      <p>
+        <strong>Explanation:</strong> <code>[(ngModel)]="name"</code> syncs the
+        input with the component variable.
+      </p>
+    </div>
+
+    <div
+      *ngIf="selectedTab === 'attribute'"
+      class="card p-3 shadow-sm border-secondary"
+    >
+      <h5>Attribute Binding Example</h5>
+      <table class="table">
+        <tr>
+          <td [attr.colspan]="colSpan">
+            This cell has colspan = {{ colSpan }}
+          </td>
+        </tr>
+      </table>
+      <p>
+        <strong>Explanation:</strong>
+        <code>[attr.colspan]="colSpan"</code> binds a non-DOM attribute.
+      </p>
+    </div>
+
+    <div *ngIf="selectedTab === 'class'" class="card p-3 shadow-sm border-dark">
+      <h5>Class Binding Example</h5>
+      <p [class.text-success]="isActive" [class.text-danger]="!isActive">
+        This message changes color!
+      </p>
+      <p>
+        <strong>Explanation:</strong>
+        <code>[class.text-success]="isActive"</code> toggles a class
+        conditionally.
+      </p>
+    </div>
+
+    <div
+      *ngIf="selectedTab === 'style'"
+      class="card p-3 shadow-sm border-danger"
+    >
+      <h5>Style Binding Example</h5>
+      <p [style.color]="isError ? 'red' : 'green'">
+        This text changes color based on a condition!
+      </p>
+      <p>
+        <strong>Explanation:</strong>
+        <code>[style.color]="isError ? 'red' : 'green'"</code> binds inline
+        style dynamically.
+      </p>
+    </div>
+  </div>
+</div>

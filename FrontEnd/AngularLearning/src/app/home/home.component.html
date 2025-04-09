@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>📘 Angular Core Concepts</h1>
+  <div class="topics-grid">
+    <div class="topic-card" *ngFor="let topic of topics">
+      <a [routerLink]="topic.path">
+        <span class="topic-icon">📌</span>
+        {{ topic.name }}
+      </a>
+    </div>
+  </div>
+</div>
