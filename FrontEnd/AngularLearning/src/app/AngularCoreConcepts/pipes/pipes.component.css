@@ -1,59 +1,85 @@
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px;
+  background-color: #eef2f5;
+}
+
 .container {
-    max-width: 800px;
-  }
-  
-  h2 {
-    font-weight: 600;
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 0.5rem;
-  }
-  
-  .card {
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
-    background-color: #ffffff;
-  }
-  
-  .nav-tabs .nav-link {
-    font-weight: 500;
-    cursor: pointer;
-    color: #007bff;
-  }
-  
-  .nav-tabs .nav-link.active {
-    background-color: #007bff;
-    color: #fff !important;
-    border-radius: 0.25rem;
-  }
-  
-  ul {
-    padding-left: 1.5rem;
-  }
-  
-  ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .list-group-item {
-    border: none;
-    background-color: #f8f9fa;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #333;
-    /* border-left: 4px solid #007bff; */
-  }
-  
-  p code {
-    background-color: #f8f9fa;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 90%;
-    font-family: monospace;
-  }
-  
-  button {
-    margin-top: 10px;
-  }
-  
+  background-color: #f9f9f9;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+}
+
+ul.nav-tabs {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 20px; /* Shift tab section to the right */
+}
+
+ul.nav-tabs .nav-item {
+  list-style: none;
+}
+
+ul.nav-tabs .nav-link {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #555;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ul.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff #007bff #fff;
+  border-radius: 6px 6px 0 0;
+}
+
+ul.nav-tabs .nav-link:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+  border-radius: 5px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.card p code {
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+button.btn-success {
+  font-weight: 500;
+  padding: 6px 16px;
+}
+
+input.form-control {
+  max-width: 300px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}

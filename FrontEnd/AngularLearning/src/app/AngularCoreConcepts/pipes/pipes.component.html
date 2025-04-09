@@ -1,56 +1,111 @@
-<div class="container mt-4">
-    <h2 class="text-success">🔹 Angular Concept: Pipes</h2>
-  
-    <div class="mb-4">
-      <p><strong>Pipes</strong> in Angular help transform data in the template.</p>
-      <ul class="list-group">
-        <li class="list-group-item"><strong>Date Pipe:</strong> Formats date values.</li>
-        <li class="list-group-item"><strong>UpperCase/LowerCase Pipe:</strong> Changes text case.</li>
-        <li class="list-group-item"><strong>Currency Pipe:</strong> Formats currency values.</li>
-        <li class="list-group-item"><strong>Custom Pipe:</strong> Your own logic to transform data.</li>
-      </ul>
+<div class="page-wrapper d-flex justify-content-center">
+  <div class="container mt-4">
+    <h2 class="text-primary">🔹 Angular Concept: Pipes</h2>
+
+    <!-- Pipes Overview Card -->
+    <div class="card shadow-sm mb-4 border-info">
+      <div class="card-body">
+        <h5 class="card-title text-info">Introduction to Pipes in Angular</h5>
+        <p>
+          <strong>Pipes</strong> in Angular help transform data in the template before display.
+        </p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Date Pipe:</strong> Formats date values.
+          </li>
+          <li class="list-group-item">
+            <strong>UpperCase / LowerCase Pipe:</strong> Changes the case of text.
+          </li>
+          <li class="list-group-item">
+            <strong>Currency Pipe:</strong> Formats numeric values as currency.
+          </li>
+          <li class="list-group-item">
+            <strong>Custom Pipe:</strong> Your own pipe logic to transform data.
+          </li>
+        </ul>
+      </div>
     </div>
-  
+
+    <!-- Pipes Tabs Header -->
+    <div class="mb-2">
+      <h5 class="text-secondary">🧪 Explore Examples by Pipe Type</h5>
+    </div>
+
     <!-- Tabs -->
     <ul class="nav nav-tabs mb-3">
       <li class="nav-item">
-        <a class="nav-link" [class.active]="selectedTab === 'date'" (click)="selectedTab = 'date'">Date Pipe</a>
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'date'"
+          (click)="selectedTab = 'date'"
+        >
+          <i class="bi bi-calendar3 text-primary me-1"></i> Date Pipe
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [class.active]="selectedTab === 'upper'" (click)="selectedTab = 'upper'">UpperCase Pipe</a>
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'upper'"
+          (click)="selectedTab = 'upper'"
+        >
+          <i class="bi bi-text-uppercase text-success me-1"></i> UpperCase Pipe
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [class.active]="selectedTab === 'currency'" (click)="selectedTab = 'currency'">Currency Pipe</a>
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'currency'"
+          (click)="selectedTab = 'currency'"
+        >
+          <i class="bi bi-currency-rupee text-warning me-1"></i> Currency Pipe
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [class.active]="selectedTab === 'custom'" (click)="selectedTab = 'custom'">Custom Pipe</a>
+        <a
+          class="nav-link"
+          [class.active]="selectedTab === 'custom'"
+          (click)="selectedTab = 'custom'"
+        >
+          <i class="bi bi-puzzle text-danger me-1"></i> Custom Pipe
+        </a>
       </li>
     </ul>
-  
-    <!-- Tab Contents -->
-    <div *ngIf="selectedTab === 'date'" class="card p-3">
+
+    <!-- Pipe Examples -->
+    <div *ngIf="selectedTab === 'date'" class="card p-3 shadow-sm border-primary">
       <h5>Date Pipe Example</h5>
-      <p><strong>Today is:</strong> {{ today | date:'fullDate' }}</p>
-      <p><strong>Explanation:</strong> <code>{{ '{{ today | date:"fullDate" }}' }}</code> formats the date.</p>
+      <p><strong>Today is:</strong> {{ today | date : 'fullDate' }}</p>
+      <p>
+        <strong>Explanation:</strong> <code>{{ '{{ today | date:"fullDate" }}' }}</code>
+        formats the date in a readable form.
+      </p>
     </div>
-  
-    <div *ngIf="selectedTab === 'upper'" class="card p-3">
+
+    <div *ngIf="selectedTab === 'upper'" class="card p-3 shadow-sm border-success">
       <h5>UpperCase Pipe Example</h5>
-      <p>{{ message | uppercase }}</p>
-      <p><strong>Explanation:</strong> <code>{{ '{{ message | uppercase }}' }}</code> transforms to upper case.</p>
+      <p><strong>Transformed Text:</strong> {{ message | uppercase }}</p>
+      <p>
+        <strong>Explanation:</strong> <code>{{ '{{ message | uppercase }}' }}</code>
+        transforms the string to uppercase.
+      </p>
     </div>
-  
-    <div *ngIf="selectedTab === 'currency'" class="card p-3">
+
+    <div *ngIf="selectedTab === 'currency'" class="card p-3 shadow-sm border-warning">
       <h5>Currency Pipe Example</h5>
-      <p>Product Price: {{ price | currency:'INR' }}</p>
-      <p><strong>Explanation:</strong> <code>{{ '{{ price | currency:"INR" }}' }}</code> formats as Indian currency.</p>
+      <p><strong>Product Price:</strong> {{ price | currency : 'INR' }}</p>
+      <p>
+        <strong>Explanation:</strong> <code>{{ '{{ price | currency:"INR" }}' }}</code>
+        formats the number as Indian currency.
+      </p>
     </div>
-  
-    <div *ngIf="selectedTab === 'custom'" class="card p-3">
+
+    <div *ngIf="selectedTab === 'custom'" class="card p-3 shadow-sm border-danger">
       <h5>Custom Pipe Example</h5>
-      <p>Original: {{ 'angular is awesome' }}</p>
-      <p>Transformed: {{ 'angular is awesome' | capitalizeWords }}</p>
-      <p><strong>Explanation:</strong> Custom pipe to capitalize each word.</p>
+      <p><strong>Transformed:</strong> {{ 'angular rocks!' | capitalizeWords  }}</p>
+      <p>
+        <strong>Explanation:</strong> <code>{{ '{{ "angular rocks!" | capitalizeWords  }}' }}</code>
+        applies a user-defined transformation to the string.
+      </p>
     </div>
   </div>
-  
+</div>
