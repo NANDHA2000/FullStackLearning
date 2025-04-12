@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BindingComponent } from './AngularCoreConcepts/binding/binding.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './AngularCoreConcepts/directives/directives.component';
 import { PipesComponent } from './AngularCoreConcepts/pipes/pipes.component';
 import { CapitalizeWordsPipe } from './AngularCoreConcepts/pipes/CustomPipes/capitalize-words.pipe';
@@ -17,6 +17,7 @@ import { Sibling2Component } from './AngularCoreConcepts/component-communication
 import { ComponentCommunicationComponent } from './AngularCoreConcepts/component-communication/component-communication/component-communication.component';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
+import { FormsComponent } from './AngularCoreConcepts/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -31,14 +32,17 @@ import { ButtonModule } from 'primeng/button';
     ChildComponent,
     Sibling1Component,
     Sibling2Component,
-    ComponentCommunicationComponent
+    ComponentCommunicationComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     TableModule,
-    ButtonModule
+    ButtonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

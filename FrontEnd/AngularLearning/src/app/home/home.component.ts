@@ -11,6 +11,7 @@ export class HomeComponent {
     { name: 'Directives', path: '/directives' },
     { name: 'Pipes', path: '/pipes' },
     { name: 'Routing', path: '/routing' },
-    { name: 'Component Communication', path: '/component-communication' }
+    { name: 'Component Communication', path: '/component-communication' },
+    { name: 'Forms', path: '/forms' }
   ];
 }

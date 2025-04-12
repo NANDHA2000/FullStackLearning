@@ -1,0 +1,65 @@
+<div class="container mt-4">
+    <h2 class="text-primary">🔹 Angular Concept: Forms</h2>
+  
+    <div class="card shadow-sm mb-4 border-info">
+      <div class="card-body">
+        <h5 class="card-title text-info">Types of Forms</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Template-driven Form:</strong> Uses directives like <code>ngModel</code> in the template.
+          </li>
+          <li class="list-group-item">
+            <strong>Reactive Form:</strong> Uses <code>FormGroup</code> and <code>FormControl</code> in TypeScript.
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-3">
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="selectedTab === 'template'" (click)="selectedTab = 'template'">Template-driven</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="selectedTab === 'reactive'" (click)="selectedTab = 'reactive'">Reactive</a>
+      </li>
+    </ul>
+  
+    <!-- Template-driven Form -->
+    <div *ngIf="selectedTab === 'template'" class="card p-3 shadow-sm border-success">
+      <h5>Template-driven Form</h5>
+      <form #templateForm="ngForm" (ngSubmit)="submitTemplateForm(templateForm)">
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email"
+                 class="form-control"
+                 name="templateEmail"
+                 [(ngModel)]="templateEmail"
+                 required
+                 #emailRef="ngModel" />
+          <div *ngIf="emailRef.invalid && emailRef.touched" class="text-danger">
+            Email is required and must be valid.
+          </div>
+        </div>
+        <button class="btn btn-success btn-sm mt-2" [disabled]="templateForm.invalid">Submit</button>
+      </form>
+    </div>
+  
+    <!-- Reactive Form -->
+    <div *ngIf="selectedTab === 'reactive'" class="card p-3 shadow-sm border-primary">
+      <h5>Reactive Form</h5>
+      <form [formGroup]="reactiveForm" (ngSubmit)="submitReactiveForm()">
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email"
+                 class="form-control"
+                 formControlName="email" />
+          <div *ngIf="reactiveForm.get('email')?.invalid && reactiveForm.get('email')?.touched" class="text-danger">
+            Email is required and must be valid.
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm mt-2" [disabled]="reactiveForm.invalid">Submit</button>
+      </form>
+    </div>
+  </div>
+  

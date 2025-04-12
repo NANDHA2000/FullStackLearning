@@ -7,6 +7,7 @@ import { DirectivesComponent } from './AngularCoreConcepts/directives/directives
 import { PipesComponent } from './AngularCoreConcepts/pipes/pipes.component';
 import { RoutingComponent } from './AngularCoreConcepts/routing/routing.component';
 import { ComponentCommunicationComponent } from './AngularCoreConcepts/component-communication/component-communication/component-communication.component';
+import { FormsComponent } from './AngularCoreConcepts/forms/forms.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'pipes', component: PipesComponent },
   { path: 'routing', component: RoutingComponent },
   { path: 'component-communication', component: ComponentCommunicationComponent },
+  { path: 'forms', component: FormsComponent },
 ];
 
 @NgModule({

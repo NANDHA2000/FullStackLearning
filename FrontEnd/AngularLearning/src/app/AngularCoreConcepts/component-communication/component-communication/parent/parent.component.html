@@ -1,6 +1,16 @@
-<div class="card p-3">
+<!-- <div class="card p-3">
     <h6>Parent Component</h6>
     <app-child (messageToParent)="handleChildMessage($event)"></app-child>
     <p *ngIf="receivedMessage"><strong>Received:</strong> {{ receivedMessage }}</p>
-  </div>
+</div> -->
+
+<div class="card p-3">
+  <h6>Parent Component</h6>
+  <app-child
+    [messageFromParent]="parentMessage"
+    (messageToParent)="handleChildMessage($event)">
+  </app-child>
+
+  <p *ngIf="receivedMessage"><strong>Received:</strong> {{ receivedMessage }}</p>
+</div>
   
