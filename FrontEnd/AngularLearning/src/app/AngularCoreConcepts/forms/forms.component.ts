@@ -20,7 +20,8 @@ export class FormsComponent {
 
   ngOnInit(): void {
     this.reactiveForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]]
+      email: ['', [Validators.required, Validators.email]],
+      password:['']
     });
   }
 
@@ -32,7 +33,9 @@ export class FormsComponent {
 
   submitReactiveForm() {
     if (this.reactiveForm.valid) {
-      alert(`Reactive Form Email: ${this.reactiveForm.value.email}`);
+      alert(`Reactive Form Email: ${this.reactiveForm.value.email}`+
+            `Reactive Form Password: ${this.reactiveForm.value.password}`
+      );
     }
   }
 }

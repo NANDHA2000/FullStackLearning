@@ -18,6 +18,7 @@ import { ComponentCommunicationComponent } from './AngularCoreConcepts/component
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { FormsComponent } from './AngularCoreConcepts/forms/forms.component';
+import { LifeCycleHooksComponent } from './AngularCoreConcepts/life-cycle-hooks/life-cycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FormsComponent } from './AngularCoreConcepts/forms/forms.component';
     Sibling1Component,
     Sibling2Component,
     ComponentCommunicationComponent,
-    FormsComponent
+    FormsComponent,
+    LifeCycleHooksComponent
   ],
   imports: [
     BrowserModule,

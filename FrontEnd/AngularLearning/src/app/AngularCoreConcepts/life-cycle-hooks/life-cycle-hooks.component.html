@@ -1,0 +1,24 @@
+<div class="container py-4">
+  <h3 class="mb-3">🔁 Angular Lifecycle Hooks Demo (Single Component)</h3>
+
+  <div class="mb-3">
+    <button class="btn btn-primary me-2" (click)="toggleComponent()">
+      {{ showComponent ? 'Destroy Component' : 'Create Component' }}
+    </button>
+
+    <button class="btn btn-warning me-2" (click)="triggerInputChange()">Change Simulated Input</button>
+
+    <button class="btn btn-danger" (click)="clearLogs()">Clear Logs</button>
+  </div>
+
+  <div class="alert alert-secondary" *ngIf="showComponent">
+    <strong>🧪 Simulated Input:</strong> {{ simulatedInput }}
+  </div>
+
+  <div class="mt-4">
+    <h5>📜 Lifecycle Logs:</h5>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let log of logs">{{ log }}</li>
+    </ul>
+  </div>
+</div>

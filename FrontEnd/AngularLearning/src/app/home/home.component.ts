@@ -12,6 +12,7 @@ export class HomeComponent {
     { name: 'Pipes', path: '/pipes' },
     { name: 'Routing', path: '/routing' },
     { name: 'Component Communication', path: '/component-communication' },
-    { name: 'Forms', path: '/forms' }
+    { name: 'Forms', path: '/forms' },
+    { name: 'Life Cycle Hooks', path: '/lifecycle-hooks' }
   ];
 }
