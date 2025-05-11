@@ -1,4 +1,4 @@
-﻿using C_DotNetLearning.Models;
+﻿using Models.Models;
 
 namespace C_DotNetLearning.LinQ
 {
