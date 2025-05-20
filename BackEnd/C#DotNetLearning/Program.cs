@@ -1,10 +1,13 @@
 ﻿using C_DotNetLearning.Collections;
 using C_DotNetLearning.LinQ;
+using C_DotNetLearning.LogicalProgarm;
+using C_DotNetLearning.Loops;
 using DotNetInterviewPreparation.Oops;
 using IntPreCode.OOPS;
 using IntPreCode.SolidPrinciple;
 using Models.Models;
 using static C_DotNetLearning.Delegates.BasicDelegates;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Program
 {
@@ -12,7 +15,7 @@ namespace Program
     {
         public static void Main(string[] args)
         {
-            LinqQuery.LinQ();
+/*            LinqQuery.LinQ();
             IEnumerableVsIQueryable.IEnumerable();
             IEnumerableVsIQueryable.IQueryable();
 
@@ -23,7 +26,15 @@ namespace Program
             RunNonGenericCollections();
 
             RunOops();
-            RunSolidPrinciple();
+            RunSolidPrinciple();*/
+
+            //RunLogicalProgram();
+
+            //RemoveDuplicate.RemoveDupFromArray();
+
+           DuckNumOrNot.DuckNumberOrNot();
+
+            //ForLoop.ExecForLoop();
 
         }
 
@@ -311,6 +322,12 @@ namespace Program
             emailService2.SendMessage("Hello,I Coming from Email");
             notification2.Send("Hello,I Coming from Notify");
             #endregion
+        }
+
+        static void RunLogicalProgram() 
+        {
+            SwapTwoValues.SwapTwoNumber();
+            SwapTwoValues.SwapTwoStrings();
         }
     
     }

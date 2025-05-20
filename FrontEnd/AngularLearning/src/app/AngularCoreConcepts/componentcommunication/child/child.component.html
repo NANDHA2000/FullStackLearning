@@ -1,0 +1,8 @@
+<div class="card bg-light p-3 mt-3">
+  <h5>Child Component</h5>
+
+  <p><strong>Message from Parent:</strong> {{ messageFromParent }}</p>
+
+  <input [(ngModel)]="childReply" placeholder="Reply to parent" class="form-control mb-2" />
+  <button class="btn btn-primary w-100" (click)="sendReply()">Send Reply</button>
+</div>

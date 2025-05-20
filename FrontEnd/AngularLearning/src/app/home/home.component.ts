@@ -11,8 +11,10 @@ export class HomeComponent {
     { name: 'Directives', path: '/directives' },
     { name: 'Pipes', path: '/pipes' },
     { name: 'Routing', path: '/routing' },
-    { name: 'Component Communication', path: '/component-communication' },
     { name: 'Forms', path: '/forms' },
-    { name: 'Life Cycle Hooks', path: '/lifecycle-hooks' }
+    { name: 'Life Cycle Hooks', path: '/lifecycle-hooks' },
+    { name: 'Component Communication', path: '/componentcommunication' },
+    { name: 'Parent Child Communication', path: '/parent-child' },
+    { name: 'Signals', path: '/signals' }
   ];
 }

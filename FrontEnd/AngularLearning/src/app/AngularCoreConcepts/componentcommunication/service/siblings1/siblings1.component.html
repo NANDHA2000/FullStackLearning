@@ -1,0 +1,11 @@
+<div class="card p-3 m-2">
+  <h5>Sibling 1</h5>
+  <input [(ngModel)]="message" class="form-control mb-2" placeholder="Type a message" />
+  <button class="btn btn-primary" (click)="sendMessage()">Send to Sibling 2</button>
+</div>
+<div class="card p-3 m-2">
+  <h5>Sibling Event 1</h5>
+  <input [(ngModel)]="inputData" class="form-control mb-2" placeholder="Trigger event with this data" />
+  <button class="btn btn-success" (click)="triggerEvent()">Trigger Event</button>
+</div>
+

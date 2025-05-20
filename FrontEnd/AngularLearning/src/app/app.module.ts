@@ -10,15 +10,17 @@ import { DirectivesComponent } from './AngularCoreConcepts/directives/directives
 import { PipesComponent } from './AngularCoreConcepts/pipes/pipes.component';
 import { CapitalizeWordsPipe } from './AngularCoreConcepts/pipes/CustomPipes/capitalize-words.pipe';
 import { RoutingComponent } from './AngularCoreConcepts/routing/routing.component';
-import { ParentComponent } from './AngularCoreConcepts/component-communication/component-communication/parent/parent.component';
-import { ChildComponent } from './AngularCoreConcepts/component-communication/component-communication/child/child.component';
-import { Sibling1Component } from './AngularCoreConcepts/component-communication/component-communication/sibling1/sibling1.component';
-import { Sibling2Component } from './AngularCoreConcepts/component-communication/component-communication/sibling2/sibling2.component';
-import { ComponentCommunicationComponent } from './AngularCoreConcepts/component-communication/component-communication/component-communication.component';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { FormsComponent } from './AngularCoreConcepts/forms/forms.component';
 import { LifeCycleHooksComponent } from './AngularCoreConcepts/life-cycle-hooks/life-cycle-hooks.component';
+import { ComponentcommunicationComponent } from './AngularCoreConcepts/componentcommunication/componentcommunication.component';
+import { Siblings1Component } from './AngularCoreConcepts/componentcommunication/service/siblings1/siblings1.component';
+import { Siblings2Component } from './AngularCoreConcepts/componentcommunication/service/siblings2/siblings2.component';
+import { ParentComponent } from './AngularCoreConcepts/componentcommunication/parent/parent.component';
+import { ChildComponent } from './AngularCoreConcepts/componentcommunication/child/child.component';
+import { SignalsComponent } from './AngularCoreConcepts/signals/signals.component';
+
 
 @NgModule({
   declarations: [
@@ -29,13 +31,14 @@ import { LifeCycleHooksComponent } from './AngularCoreConcepts/life-cycle-hooks/
     PipesComponent,
     CapitalizeWordsPipe,
     RoutingComponent,
+    FormsComponent,
+    LifeCycleHooksComponent,
+    ComponentcommunicationComponent,
+    Siblings1Component,
+    Siblings2Component,
     ParentComponent,
     ChildComponent,
-    Sibling1Component,
-    Sibling2Component,
-    ComponentCommunicationComponent,
-    FormsComponent,
-    LifeCycleHooksComponent
+    SignalsComponent
   ],
   imports: [
     BrowserModule,

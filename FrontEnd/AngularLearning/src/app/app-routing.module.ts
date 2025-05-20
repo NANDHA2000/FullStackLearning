@@ -6,9 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { DirectivesComponent } from './AngularCoreConcepts/directives/directives.component';
 import { PipesComponent } from './AngularCoreConcepts/pipes/pipes.component';
 import { RoutingComponent } from './AngularCoreConcepts/routing/routing.component';
-import { ComponentCommunicationComponent } from './AngularCoreConcepts/component-communication/component-communication/component-communication.component';
 import { FormsComponent } from './AngularCoreConcepts/forms/forms.component';
 import { LifeCycleHooksComponent } from './AngularCoreConcepts/life-cycle-hooks/life-cycle-hooks.component';
+import { ComponentcommunicationComponent } from './AngularCoreConcepts/componentcommunication/componentcommunication.component';
+import { SignalsComponent } from './AngularCoreConcepts/signals/signals.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,9 +18,11 @@ const routes: Routes = [
   { path: 'directives', component: DirectivesComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'routing', component: RoutingComponent },
-  { path: 'component-communication', component: ComponentCommunicationComponent },
   { path: 'forms', component: FormsComponent },
   { path: 'lifecycle-hooks', component: LifeCycleHooksComponent },
+  { path: 'componentcommunication', component: ComponentcommunicationComponent },
+  { path: 'parent-child', component: ComponentcommunicationComponent },
+  { path: 'signals', component: SignalsComponent },
 ];
 
 @NgModule({

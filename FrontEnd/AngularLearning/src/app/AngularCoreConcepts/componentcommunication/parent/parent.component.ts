@@ -6,10 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent {
-  parentMessage = '👨 Message from Parent Component';
-  receivedMessage = '';
 
-  handleChildMessage(event: string) {
-    this.receivedMessage = event;
+  parentMessage = 'Hello from Parent!';
+  childReply = '';
+
+  handleChildReply(reply: string) {
+    this.childReply = reply;
   }
+
 }

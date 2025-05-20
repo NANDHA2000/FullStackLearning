@@ -7,10 +7,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ChildComponent {
   @Input() messageFromParent: string = '';
+  @Output() replyToParent = new EventEmitter<string>();
 
-  @Output() messageToParent = new EventEmitter<string>();
+  childReply: string = '';
 
-  sendMessage() {
-    this.messageToParent.emit('👶 Message from Child Component');
+  sendReply() {
+    this.replyToParent.emit(this.childReply);
+    this.childReply = ''; // Clear input after sending
   }
 }

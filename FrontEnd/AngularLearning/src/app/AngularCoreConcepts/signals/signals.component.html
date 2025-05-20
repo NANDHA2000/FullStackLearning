@@ -1,0 +1,81 @@
+<div class="page-wrapper d-flex justify-content-center">
+  <div class="container mt-4">
+    <h2 class="text-primary">📶 Angular Concept: Signals</h2>
+
+    <!-- Signal Info Card -->
+    <div class="card shadow-sm mb-4 border-success">
+      <div class="card-body">
+        <h5 class="card-title text-success">What are Signals?</h5>
+        <p>
+          Signals in Angular are a reactive primitive introduced to manage data changes efficiently.
+          They help track dependencies and auto-update views when values change.
+        </p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>signal():</strong> Creates a signal with an initial value.
+          </li>
+          <li class="list-group-item">
+            <strong>computed():</strong> Defines a derived value based on one or more signals.
+          </li>
+          <li class="list-group-item">
+            <strong>effect():</strong> Reacts to signal changes and runs side effects.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Signal Example Tabs -->
+    <ul class="nav nav-tabs mb-3">
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="signalTab === 'basic'" (click)="signalTab = 'basic'">
+          <i class="bi bi-lightbulb me-1 text-primary"></i> Basic Signal
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="signalTab === 'computed'" (click)="signalTab = 'computed'">
+          <i class="bi bi-bar-chart me-1 text-warning"></i> Computed Signal
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="signalTab === 'effect'" (click)="signalTab = 'effect'">
+          <i class="bi bi-broadcast me-1 text-success"></i> Effect Signal
+        </a>
+      </li>
+    </ul>
+
+    <!-- Basic Signal Example -->
+    <div *ngIf="signalTab === 'basic'" class="card p-3 shadow-sm border-primary">
+      <h5>Basic Signal Example</h5>
+      <p>Counter: {{ counter() }}</p>
+      <button class="btn btn-primary me-2" (click)="increment()">Increment</button>
+      <button class="btn btn-outline-secondary" (click)="reset()">Reset</button>
+      <p><strong>Explanation:</strong> <code>signal()</code> holds a reactive value. You use <code>counter()</code> to read its current value.</p>
+    </div>
+
+    <!-- Computed Signal Example -->
+    <div *ngIf="signalTab === 'computed'" class="card p-3 shadow-sm border-warning">
+      <h5>Computed Signal Example</h5>
+      <p>Counter: {{ counter() }}</p>
+      <p>Doubled Value: {{ doubleCounter() }}</p>
+      <button class="btn btn-warning" (click)="increment()">Increment</button>
+      <p><strong>Explanation:</strong> <code>computed()</code> creates a reactive value based on another signal.</p>
+    </div>
+
+    <!-- Effect Signal Example -->
+<div *ngIf="signalTab === 'effect'" class="card p-3 shadow-sm border-success">
+  <h5>Effect Signal Example</h5>
+  <p>Every time the counter changes, a new log is added below:</p>
+  <button class="btn btn-success mb-3" (click)="increment()">Increment</button>
+  <button class="btn btn-outline-danger mb-3 ms-2" (click)="logs = []">Clear Logs</button>
+
+  <div class="logs-container">
+    <ul>
+      <li *ngFor="let log of logs">{{ log }}</li>
+    </ul>
+  </div>
+
+  <p><strong>Explanation:</strong> <code>effect()</code> runs side effects (like updating UI logs) when signal values change.</p>
+</div>
+
+  </div>
+</div>

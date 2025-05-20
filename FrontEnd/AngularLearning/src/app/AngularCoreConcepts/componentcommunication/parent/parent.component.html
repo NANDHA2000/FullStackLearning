@@ -1,0 +1,13 @@
+<div class="card p-3">
+  <h4>Parent Component</h4>
+
+  <label>Message to Child:</label>
+  <input [(ngModel)]="parentMessage" class="form-control mb-2" />
+
+  <p><strong>Child replied:</strong> {{ childReply }}</p>
+
+  <app-child
+    [messageFromParent]="parentMessage"
+    (replyToParent)="handleChildReply($event)">
+  </app-child>
+</div>

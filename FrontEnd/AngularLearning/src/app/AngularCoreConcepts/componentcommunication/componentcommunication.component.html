@@ -1,0 +1,37 @@
+<div class="container mt-4">
+  <div class="btn-group mb-4">
+    <button class="btn btn-primary" (click)="selectedView = 'parent-child'">Parent ↔ Child</button>
+    <button class="btn btn-secondary" (click)="selectedView = 'sibling'">Sibling ↔ Sibling</button>
+  </div>
+
+  <!-- Parent to Child -->
+<div class="container mt-4">
+  <h2>Angular Component Communication</h2>
+
+  <ul class="nav nav-tabs mt-3">
+    <li class="nav-item">
+      <a class="nav-link" [class.active]="selectedView === 'parent-child'" (click)="selectedView = 'parent-child'">
+        Parent ↔ Child Communication
+      </a>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedView === 'parent-child'" class="mt-3">
+    <app-parent></app-parent>
+  </div>
+</div>
+
+
+  <!-- Sibling to Sibling -->
+  <div *ngIf="selectedView === 'sibling'">
+    <h3>Sibling to Sibling Communication</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <app-siblings1></app-siblings1>
+      </div>
+      <div class="col-md-6">
+        <app-siblings2></app-siblings2>
+      </div>
+    </div>
+  </div>
+</div>
