@@ -20,6 +20,8 @@ import { Siblings2Component } from './AngularCoreConcepts/componentcommunication
 import { ParentComponent } from './AngularCoreConcepts/componentcommunication/parent/parent.component';
 import { ChildComponent } from './AngularCoreConcepts/componentcommunication/child/child.component';
 import { SignalsComponent } from './AngularCoreConcepts/signals/signals.component';
+import { StandaloneComponent } from './AngularCoreConcepts/standalone/standalone.component';
+
 
 
 @NgModule({

@@ -1,0 +1,56 @@
+<div class="card mt-3">
+  <div class="card-header bg-primary text-white">
+    <h5>What is a Standalone Component?</h5>
+  </div>
+  <div class="card-body">
+    <p>
+      A <strong>standalone component</strong> in Angular is a self-contained component
+      that does <strong>not require</strong> to be declared inside an NgModule.
+      It can directly import other components, directives, and pipes.
+    </p>
+    <ul>
+      <li>Introduced in Angular v14+</li>
+      <li>Simplifies module structure</li>
+      <li>Can be bootstrapped directly</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card mt-4">
+  <div class="card-header bg-success text-white">
+    <h5>Standalone Component Example</h5>
+  </div>
+  <div class="card-body">
+    <app-standalone-example></app-standalone-example>
+  </div>
+</div>
+
+<div class="card mt-4">
+  <div class="card-header bg-dark text-white">
+    <h5>Standalone Component Summary</h5>
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered table-hover">
+      <thead class="table-secondary">
+        <tr>
+          <th>Feature</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Standalone</td>
+          <td>No need to declare in NgModule</td>
+        </tr>
+        <tr>
+          <td>Imports</td>
+          <td>Directly imports components/pipes</td>
+        </tr>
+        <tr>
+          <td>Routing</td>
+          <td>Can be used in routing like normal components</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

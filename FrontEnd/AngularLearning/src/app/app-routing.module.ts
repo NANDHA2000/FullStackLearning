@@ -10,6 +10,7 @@ import { FormsComponent } from './AngularCoreConcepts/forms/forms.component';
 import { LifeCycleHooksComponent } from './AngularCoreConcepts/life-cycle-hooks/life-cycle-hooks.component';
 import { ComponentcommunicationComponent } from './AngularCoreConcepts/componentcommunication/componentcommunication.component';
 import { SignalsComponent } from './AngularCoreConcepts/signals/signals.component';
+import { StandaloneComponent } from './AngularCoreConcepts/standalone/standalone.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,8 +22,9 @@ const routes: Routes = [
   { path: 'forms', component: FormsComponent },
   { path: 'lifecycle-hooks', component: LifeCycleHooksComponent },
   { path: 'componentcommunication', component: ComponentcommunicationComponent },
-  { path: 'parent-child', component: ComponentcommunicationComponent },
   { path: 'signals', component: SignalsComponent },
+  { path: 'standalone', component: StandaloneComponent },
+  
 ];
 
 @NgModule({

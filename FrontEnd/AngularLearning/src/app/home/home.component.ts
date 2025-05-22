@@ -14,7 +14,7 @@ export class HomeComponent {
     { name: 'Forms', path: '/forms' },
     { name: 'Life Cycle Hooks', path: '/lifecycle-hooks' },
     { name: 'Component Communication', path: '/componentcommunication' },
-    { name: 'Parent Child Communication', path: '/parent-child' },
-    { name: 'Signals', path: '/signals' }
+    { name: 'Signals', path: '/signals' },
+    { name: 'Standalone', path: '/standalone' }
   ];
 }
