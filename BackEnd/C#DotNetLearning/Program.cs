@@ -7,7 +7,6 @@ using IntPreCode.OOPS;
 using IntPreCode.SolidPrinciple;
 using Models.Models;
 using static C_DotNetLearning.Delegates.BasicDelegates;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Program
 {
@@ -15,7 +14,7 @@ namespace Program
     {
         public static void Main(string[] args)
         {
-/*            LinqQuery.LinQ();
+            LinqQuery.LinQ();
             IEnumerableVsIQueryable.IEnumerable();
             IEnumerableVsIQueryable.IQueryable();
 
@@ -26,15 +25,15 @@ namespace Program
             RunNonGenericCollections();
 
             RunOops();
-            RunSolidPrinciple();*/
+            RunSolidPrinciple();
 
-            //RunLogicalProgram();
+            RunLogicalProgram();
 
-            //RemoveDuplicate.RemoveDupFromArray();
+            RemoveDuplicate.RemoveDupFromArray();
 
            DuckNumOrNot.DuckNumberOrNot();
 
-            //ForLoop.ExecForLoop();
+            ForLoop.ExecForLoop();
 
         }
 
