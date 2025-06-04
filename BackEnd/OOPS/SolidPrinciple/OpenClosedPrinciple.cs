@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntPreCode.SolidPrinciple
+namespace CSharp.OOP.SolidPrinciple
 {
     /*
          Open Closed Principle (OCP) 

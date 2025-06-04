@@ -2,8 +2,8 @@
 
 /* Collection In C#
 
-********** In C#, collections are classes that are used to store, manage, and manipulate groups of related objects. 
-********** They are part of the System.Collections, System.Collections.Generic, and System.Collections.Concurrent namespaces.
+** In C#, collections are classes that are used to store, manage, and manipulate groups of related objects. 
+** They are part of the System.Collections, System.Collections.Generic, and System.Collections.Concurrent namespaces.
 
 
 Types of Collections in C#
@@ -72,7 +72,7 @@ Types of Collections in C#
 #endregion
 
 
-namespace C_DotNetLearning.Collections
+namespace CSharp.Intermediate.Collections
 {
     public class Generic
     {
@@ -88,7 +88,7 @@ namespace C_DotNetLearning.Collections
             list.Add(500);    // Add new integer value in list
             list.AddRange(new List<int> { 21, 22 });  //Add new elements as a collection to the list
 
-            // Insert elements
+            /*// Insert elements
             list.Insert(0, 999);                              // Insert at index 0
             list.InsertRange(2, new List<int> { 300, 400 });  // Insert a range at index 2
 
@@ -111,7 +111,7 @@ namespace C_DotNetLearning.Collections
 
             // Access
             int count = list.Count;                   // Number of items
-            int firstItem = list[0];                  // Get item by index
+            int firstItem = list[0];                  // Get item by index*/
 
             // Clear list (optional demonstration)
             // list.Clear();

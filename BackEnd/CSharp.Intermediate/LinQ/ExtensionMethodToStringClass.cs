@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_DotNetLearning.LinQ
+namespace CSharp.Intermediate.LinQ
 {
     public static class ExtensionMethodToStringClass
     {
         public static (int wordCount, int charCount) GetWordCount(this string str)
         {
-            if(!String.IsNullOrEmpty(str))
+            if(!string.IsNullOrEmpty(str))
             {
 
                 int wordCount = str.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;

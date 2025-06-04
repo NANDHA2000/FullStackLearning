@@ -19,7 +19,7 @@ Non-Generic Collections
 
 using System.Collections;
 
-namespace C_DotNetLearning.Collections
+namespace CSharp.Intermediate.Collections
 {
     public class NonGeneric
     {
@@ -64,8 +64,8 @@ namespace C_DotNetLearning.Collections
         public static SortedList SortedList()
         {
             SortedList sortedList = new SortedList();
-            sortedList.Add(2, "Beta");
-            sortedList.Add(1, "Alpha");
+            sortedList.Add("2", "Beta");
+            sortedList.Add("1", "Alpha");
 
             foreach(DictionaryEntry item in sortedList)
             {

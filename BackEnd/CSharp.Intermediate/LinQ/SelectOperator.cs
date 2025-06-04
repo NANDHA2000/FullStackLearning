@@ -1,6 +1,6 @@
-﻿using Models.Models;
+﻿using CSharp.CommonUtils.Models;
 
-namespace C_DotNetLearning.LinQ
+namespace CSharp.Intermediate.LinQ
 {
     public class SelectOperator
     {

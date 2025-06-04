@@ -12,7 +12,7 @@ Encapsulation :-
 
  */
 
-namespace IntPreCode.OOPS
+namespace CSharp.OOP.OOP
 {
     public class Encapsulation
     {

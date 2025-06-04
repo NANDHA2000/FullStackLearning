@@ -9,7 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Models\Models.csproj" />
+    <Compile Remove="RunFile\RunCSharp.OOP.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="RunFile\RunCSharp.OOP.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\C#Basics&amp;Fundamentals\CSharp.Basics.csproj" />
+    <ProjectReference Include="..\CSharp.Advanced\CSharp.Advanced.csproj" />
+    <ProjectReference Include="..\CSharp.ExpertPatterns\CSharp.ExpertPatterns.csproj" />
+    <ProjectReference Include="..\CSharp.Intermediate\CSharp.Intermediate.csproj" />
+    <ProjectReference Include="..\CSharp.RealWorld\CSharp.RealWorld.csproj" />
+    <ProjectReference Include="..\Models\CSharp.CommonUtils.csproj" />
+    <ProjectReference Include="..\OOPS\CSharp.OOP.csproj" />
   </ItemGroup>
 
 </Project>

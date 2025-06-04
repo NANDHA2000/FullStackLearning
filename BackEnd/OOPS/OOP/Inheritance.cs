@@ -8,7 +8,7 @@
  
  */
 
-namespace DotNetInterviewPreparation.Oops
+namespace CSharp.OOP.OOP
 {
     public class Inheritance
     {

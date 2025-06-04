@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_DotNetLearning.LinQ
+namespace CSharp.Intermediate.LinQ
 {
     public class LinqQuery
     {

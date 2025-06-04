@@ -1,11 +1,11 @@
-﻿using Models.Models;
+﻿using CSharp.CommonUtils.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_DotNetLearning.LinQ
+namespace CSharp.Intermediate.LinQ
 {
     public class IEnumerableVsIQueryable
     {

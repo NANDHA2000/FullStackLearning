@@ -7,7 +7,7 @@
  
 */
 
-namespace DotNetInterviewPreparation.Oops
+namespace CSharp.OOP.OOP
 {
 
     // Abstraction in C# (Using Abstract Class)
