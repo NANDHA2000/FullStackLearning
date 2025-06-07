@@ -4,7 +4,6 @@ namespace CSharp.Intermediate.LinQ
 {
     public class SelectOperator
     {
-
         public static List<Employee> GetEmployees()
         {
             List<Employee> employees = new List<Employee>

@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DotNetInterviewPreparation.Coding
+{
+    public class SortArray
+    {
+        public void sortarray(int[] arr) 
+        {
+            Array.Sort(arr);
+            Console.WriteLine("Sorted array: " + string.Join(", ", arr));
+        }  
+    }
+}

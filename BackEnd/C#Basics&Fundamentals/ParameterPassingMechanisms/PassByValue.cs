@@ -4,7 +4,7 @@ Pass by Value: The method can't change the original value.
 
 */
 
-namespace C_DotNetLearning.ParameterPassingMechanisms
+namespace CSharpLearning.ParameterPassingMechanisms
 {
     public class PassByValue
     {

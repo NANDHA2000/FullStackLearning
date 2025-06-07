@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_DotNetLearning.Loops
+namespace CSharpLearning.Loops
 {
     public class ForLoop
     {

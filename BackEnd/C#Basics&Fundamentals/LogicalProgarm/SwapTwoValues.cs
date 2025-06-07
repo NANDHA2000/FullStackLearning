@@ -10,7 +10,7 @@ There are two ways you can use to swap two numbers without using the third varia
  
  */
 
-namespace C_DotNetLearning.LogicalProgarm
+namespace CSharpLearning.LogicalProgarm
 {
     public class SwapTwoValues
     {

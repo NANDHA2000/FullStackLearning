@@ -3,22 +3,15 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>C_DotNetLearning</RootNamespace>
+    <RootNamespace>CSharpLearning</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="RunFile\RunCSharp.OOP.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="RunFile\RunCSharp.OOP.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\C#Basics&amp;Fundamentals\CSharp.Basics.csproj" />
     <ProjectReference Include="..\CSharp.Advanced\CSharp.Advanced.csproj" />
+    <ProjectReference Include="..\CSharp.Coding\CSharp.Coding.csproj" />
     <ProjectReference Include="..\CSharp.ExpertPatterns\CSharp.ExpertPatterns.csproj" />
     <ProjectReference Include="..\CSharp.Intermediate\CSharp.Intermediate.csproj" />
     <ProjectReference Include="..\CSharp.RealWorld\CSharp.RealWorld.csproj" />

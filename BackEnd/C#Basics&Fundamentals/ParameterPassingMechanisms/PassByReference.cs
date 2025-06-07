@@ -36,7 +36,7 @@
 
  */
 
-namespace C_DotNetLearning.Modifiers
+namespace CSharpLearning.Modifiers
 {
     public class PassByReference
     {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_Basics_Fundamentals
+namespace CSharp.Intermediate.Delegates_Events
 {
-    internal class ControlStatements
+    public class MulticastDelegate
     {
     }
 }

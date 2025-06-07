@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace C_DotNetLearning.LogicalProgarm
+namespace CSharpLearning.LogicalProgarm
 {
     public class DuckNumOrNot
     {

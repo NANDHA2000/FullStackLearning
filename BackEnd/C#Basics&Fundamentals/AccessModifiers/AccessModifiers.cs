@@ -19,7 +19,7 @@ private protected	     Same class or derived class in the same assembly
  
  */
 
-namespace C_DotNetLearning.AccessModifiers
+namespace CSharp.Basics.AccessModifiers
 {
     public class AccessModifiers
     {

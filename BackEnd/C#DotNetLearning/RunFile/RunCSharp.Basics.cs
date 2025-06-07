@@ -1,20 +1,21 @@
-﻿using C_DotNetLearning.LogicalProgarm;
-using C_DotNetLearning.Modifiers;
-using C_DotNetLearning.ParameterPassingMechanisms;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static C_DotNetLearning.AccessModifiers.AccessModifiers;
+﻿using C_Basics_Fundamentals;
+using C_Basics_Fundamentals.ControlFlowStatements;
+using C_Basics_Fundamentals.ExceptionHandling;
+using C_Basics_Fundamentals.Methods;
+using C_Basics_Fundamentals.Operators;
+using CSharp.Intermediate.LinQ;
+using CSharpLearning.LogicalProgarm;
+using CSharpLearning.Loops;
+using CSharpLearning.Modifiers;
+using CSharpLearning.ParameterPassingMechanisms;
+using static CSharp.Basics.AccessModifiers.AccessModifiers;
 
-namespace C_DotNetLearning.RunFile
+namespace CSharpLearning.RunFile
 {
     public static class RunCSharpBasics
     {
 
         //Access Modifier
-
         public static void RunAccessModifiers()
         {
             var baseObj = new BaseClass();
@@ -30,8 +31,51 @@ namespace C_DotNetLearning.RunFile
             otherObj.ShowAccessInOther();
         }
 
-        //ParameterPassingMechanisms
+        //Basic OOPs
+        public static void RunBasicOOP()
+        {
+            ForLoop.ExecForLoop();
+        }
 
+        //ControlFlowStatements
+        public static void RunControlFlowStatements()
+        {
+            ControlFlowStatements.ControlFlowStatementsEx();
+            ForLoop.ExecForLoop();
+        }
+
+        //ExceptionHandling
+        public static void RunExceptionHandling()
+        {
+            ExceptionHandling.ExceptionHandlingEx();
+        }
+
+        //LogicalProgram
+        public static void RunLogicalProgram()
+        {
+            SwapTwoValues.SwapTwoNumber();
+            SwapTwoValues.SwapTwoStrings();
+            RemoveDuplicate.RemoveDupFromArray();
+            DuckNumOrNot.DuckNumberOrNot();
+        }
+
+        //Methods
+        public static void RunMethods()
+        {
+            Console.WriteLine(Methods.Add(5, 3));
+            Console.WriteLine(Methods.Add(2.5, 3.5));
+            Console.WriteLine(Methods.Subtract(15, 30));
+            Console.WriteLine(Methods.Subtract(21.5, 32.5));
+        }
+
+        //Operators
+        public static void RunOperators()
+        {
+            Operators.OperatorsEx();
+        }
+
+
+        //ParameterPassingMechanisms
         public static void RunParameterPassingMechanisms()
         {
 
@@ -51,11 +95,22 @@ namespace C_DotNetLearning.RunFile
 
         }
 
-
-        public static void RunLogicalProgram()
+        //VariablesAndDataTypes
+        public static void RunVariablesAndDataTypes()
         {
-            SwapTwoValues.SwapTwoNumber();
-            SwapTwoValues.SwapTwoStrings();
+            VariablesAndDataTypes.VariablesAndDataType();
         }
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
