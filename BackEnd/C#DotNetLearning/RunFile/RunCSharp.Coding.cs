@@ -1,6 +1,5 @@
 ﻿using CSharp.Coding.Duplicate;
 using CSharp.Coding.Reversing;
-using CSharpLearning.LogicalProgarm;
 using System;
 using System.Collections.Generic;
 using System.Linq;

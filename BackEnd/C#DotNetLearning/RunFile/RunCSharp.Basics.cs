@@ -3,8 +3,10 @@ using C_Basics_Fundamentals.ControlFlowStatements;
 using C_Basics_Fundamentals.ExceptionHandling;
 using C_Basics_Fundamentals.Methods;
 using C_Basics_Fundamentals.Operators;
+using C_Basics_Fundamentals.Variables;
+using CSharp.Coding.LogicalProgram;
+using CSharp.Coding.Swapping;
 using CSharp.Intermediate.LinQ;
-using CSharpLearning.LogicalProgarm;
 using CSharpLearning.Loops;
 using CSharpLearning.Modifiers;
 using CSharpLearning.ParameterPassingMechanisms;
@@ -99,6 +101,19 @@ namespace CSharpLearning.RunFile
         public static void RunVariablesAndDataTypes()
         {
             VariablesAndDataTypes.VariablesAndDataType();
+
+            VariablesAndDataTypes variablesAndDataTypes = new VariablesAndDataTypes();
+            variablesAndDataTypes.PrintMessage("Hello again!");
+            variablesAndDataTypes.Age = 28;
+            Console.WriteLine($"Instance Name: {variablesAndDataTypes.instanceName}");
+            Console.WriteLine($"Created At: {variablesAndDataTypes.createdAt}");
+            Console.WriteLine($"Auto Property Age: {variablesAndDataTypes.Age}");
+            Console.WriteLine($"Static Counter: {VariablesAndDataTypes.staticCounter}");
+            Console.WriteLine($"Const Field Gravity: {VariablesAndDataTypes.Gravity}");
+            Console.WriteLine($"Static Readonly AppVersion: {VariablesAndDataTypes.appVersion}");
+
+            StaticConstReadonly staticConstReadonly = new StaticConstReadonly();
+
         }
 
 

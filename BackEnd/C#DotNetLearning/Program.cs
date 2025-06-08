@@ -1,5 +1,4 @@
-﻿using CSharpLearning.LogicalProgarm;
-using CSharpLearning.Loops;
+﻿using CSharpLearning.Loops;
 using CSharpLearning.RunFile;
 using CSharp.CommonUtils.Models;
 using CSharp.Intermediate.LinQ;
@@ -13,7 +12,7 @@ namespace Program
         public static void Main(string[] args)
         {
 
-            /*RunCSharpOOP.RunOops();
+            RunCSharpOOP.RunOops();
             RunCSharpOOP.RunSolidPrinciple();
 
             
@@ -35,7 +34,7 @@ namespace Program
             RunCSharpIntermediate.RunDelegatesAndEvents();
             RunCSharpIntermediate.RunExtensionMethod();
             RunCSharpIntermediate.RunSelectOperator();
-            RunCSharpIntermediate.RunSelectOperator();*/
+            RunCSharpIntermediate.RunSelectOperator();
 
             RunCSharpCoding.RunLogicalProgram();
 

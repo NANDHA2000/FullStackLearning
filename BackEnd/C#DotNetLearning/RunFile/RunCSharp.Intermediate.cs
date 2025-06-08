@@ -2,7 +2,6 @@
 using CSharp.Intermediate.Collections;
 using CSharp.Intermediate.ExtensionMethod;
 using CSharp.Intermediate.LinQ;
-using CSharpLearning.LogicalProgarm;
 using CSharpLearning.Modifiers;
 using CSharpLearning.ParameterPassingMechanisms;
 using System;
