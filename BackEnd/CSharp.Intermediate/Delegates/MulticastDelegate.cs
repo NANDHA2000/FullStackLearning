@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp.Intermediate.Delegates_Events
+namespace CSharp.Intermediate.Delegates
 {
     public class MulticastDelegate
     {

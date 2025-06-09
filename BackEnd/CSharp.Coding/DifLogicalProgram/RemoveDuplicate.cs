@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp.Coding.LogicalProgram
+namespace CSharp.Coding.DifLogicalProgram
 {
     public class RemoveDuplicate
     {

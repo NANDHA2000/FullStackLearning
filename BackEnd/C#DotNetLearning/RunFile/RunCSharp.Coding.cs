@@ -14,9 +14,11 @@ namespace CSharpLearning.RunFile
         //LogicalProgram
         public static void RunLogicalProgram()
         {
-            Reversing.ReversingTheString();
-            Reversing.ReversingTheNumber();
-            Reversing.ReversingTheWord();
+            ReversingString.ReversingInput();
+            ReversingNumber.ReversingNumbers();
+            Reversing.ReverseTheOrderOfWords();
+
+
             DuplicateFromString.DuplicateFromStringEx();
         }
     }

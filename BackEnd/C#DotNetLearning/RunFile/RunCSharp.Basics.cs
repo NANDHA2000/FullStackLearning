@@ -4,7 +4,7 @@ using C_Basics_Fundamentals.ExceptionHandling;
 using C_Basics_Fundamentals.Methods;
 using C_Basics_Fundamentals.Operators;
 using C_Basics_Fundamentals.Variables;
-using CSharp.Coding.LogicalProgram;
+using CSharp.Coding.DifLogicalProgram;
 using CSharp.Coding.Swapping;
 using CSharp.Intermediate.LinQ;
 using CSharpLearning.Loops;
@@ -20,17 +20,18 @@ namespace CSharpLearning.RunFile
         //Access Modifier
         public static void RunAccessModifiers()
         {
-            var baseObj = new BaseClass();
-            var derivedObj = new DerivedClass();
-            var otherObj = new OtherClass();
+            BaseClass baseClass = new BaseClass();
 
-            baseObj.ShowAccessInBase();
-            Console.WriteLine("----------------------");
+            DerivedClass derivedClass = new DerivedClass();
 
-            derivedObj.ShowAccessInDerived();
-            Console.WriteLine("----------------------");
+            OtherClass otherClass = new OtherClass();
 
-            otherObj.ShowAccessInOther();
+            baseClass.BaseClassEx();
+            Console.WriteLine(" ");
+            derivedClass.DerivedClassEx();
+            Console.WriteLine(" ");
+            otherClass.OtherClassEx();
+
         }
 
         //Basic OOPs
@@ -100,19 +101,31 @@ namespace CSharpLearning.RunFile
         //VariablesAndDataTypes
         public static void RunVariablesAndDataTypes()
         {
+            // Call static method to demonstrate local variables
             VariablesAndDataTypes.VariablesAndDataType();
 
+            Console.WriteLine("\n---- Instance & Static Members ----");
+
+            // Create object (instance) of VariablesAndDataTypes
             VariablesAndDataTypes variablesAndDataTypes = new VariablesAndDataTypes();
+
+            // Call instance method with parameter variable
             variablesAndDataTypes.PrintMessage("Hello again!");
+
+            // Set property value
             variablesAndDataTypes.Age = 28;
+
+            // Access instance variable, property, readonly field
             Console.WriteLine($"Instance Name: {variablesAndDataTypes.instanceName}");
-            Console.WriteLine($"Created At: {variablesAndDataTypes.createdAt}");
+            Console.WriteLine($"Created At (Readonly Field): {variablesAndDataTypes.createdAt}");
             Console.WriteLine($"Auto Property Age: {variablesAndDataTypes.Age}");
+
+            // Access static variable, constant, static readonly
             Console.WriteLine($"Static Counter: {VariablesAndDataTypes.staticCounter}");
             Console.WriteLine($"Const Field Gravity: {VariablesAndDataTypes.Gravity}");
             Console.WriteLine($"Static Readonly AppVersion: {VariablesAndDataTypes.appVersion}");
 
-            StaticConstReadonly staticConstReadonly = new StaticConstReadonly();
+            //StaticConstReadonly staticConstReadonly = new StaticConstReadonly();
 
         }
 

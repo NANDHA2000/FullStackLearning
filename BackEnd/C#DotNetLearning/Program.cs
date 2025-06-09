@@ -1,8 +1,9 @@
-﻿using CSharpLearning.Loops;
-using CSharpLearning.RunFile;
+﻿using C_Basics_Fundamentals.ProblemStatementProgram;
 using CSharp.CommonUtils.Models;
 using CSharp.Intermediate.LinQ;
-using C_Basics_Fundamentals.ProblemStatementProgram;
+using CSharp.OOP;
+using CSharpLearning.Loops;
+using CSharpLearning.RunFile;
 
 
 namespace Program
@@ -15,7 +16,6 @@ namespace Program
             RunCSharpOOP.RunOops();
             RunCSharpOOP.RunSolidPrinciple();
 
-            
             RunCSharpBasics.RunAccessModifiers();
             RunCSharpBasics.RunBasicOOP();
             RunCSharpBasics.RunControlFlowStatements();
@@ -25,7 +25,7 @@ namespace Program
             RunCSharpBasics.RunOperators();
             RunCSharpBasics.RunParameterPassingMechanisms();
             RunCSharpBasics.RunVariablesAndDataTypes();
-            
+
 
 
             RunCSharpIntermediate.RunGenericCollections();
@@ -39,19 +39,15 @@ namespace Program
             RunCSharpCoding.RunLogicalProgram();
 
 
-
-
-
-
             //MatrixTransversal.DirectionalPatternMatchInGrid();
 
-/*            var result = MatrixTransversal.DirectionalPatternMatchInGrid();
+            /*            var result = MatrixTransversal.DirectionalPatternMatchInGrid();
 
-            Console.WriteLine("\nFinal Pattern Matches:");
-            foreach(var kvp in result)
-            {
-                Console.WriteLine($"{kvp.Key}: {kvp.Value}");
-            }*/
+                        Console.WriteLine("\nFinal Pattern Matches:");
+                        foreach(var kvp in result)
+                        {
+                            Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+                        }*/
 
         }
 

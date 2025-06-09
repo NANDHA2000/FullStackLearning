@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp.Coding.LogicalProgram.Coding.Reversing
+namespace CSharp.Coding.Reversing
 {
-    public class ReversingNumber
+    public static class ReversingNumber
     {
 
-        public void ReversingNumbers(int InputNumber)
+        public static void ReversingNumbers()
         {
-            //int InputNumber = 123456;
+            int InputNumber = 123456;
 
             string ReversedNumber = InputNumber.ToString();
 

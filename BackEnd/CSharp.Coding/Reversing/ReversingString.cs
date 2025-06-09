@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp.Coding.LogicalProgram.Coding.Reversing
+namespace CSharp.Coding.Reversing
 {
-    public class ReversingString
+    public static class ReversingString
     {
 
-        public void ReversingInput()
+        public static void ReversingInput()
         {
             string input = "Nandha";
 
@@ -28,7 +28,7 @@ namespace CSharp.Coding.LogicalProgram.Coding.Reversing
 
 
         #region Inbuild Function
-        public void ReversingInput(string input)
+        public static void ReversingInput(string input)
         {
 
             //Inbuild Function

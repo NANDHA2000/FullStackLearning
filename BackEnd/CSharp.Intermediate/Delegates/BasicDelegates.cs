@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpLearning.Delegates
+namespace CSharp.Intermediate.Delegates
 {
     public static class BasicDelegates
     {

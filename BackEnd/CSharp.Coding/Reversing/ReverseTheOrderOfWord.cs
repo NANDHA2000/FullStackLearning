@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp.Coding.LogicalProgram.Coding.Reversing
+namespace CSharp.Coding.Reversing
 {
-    public class ReverseTheOrderOfWord
+    public static class Reversing
     {
-
-        public void ReverseTheOrderOfWords()
+        public static void ReverseTheOrderOfWords()
         {
             string Input = "I'm Super hero";
 
@@ -24,7 +23,6 @@ namespace CSharp.Coding.LogicalProgram.Coding.Reversing
                     Console.Write(" ");
                 }
             }
-
 
             // Output : hero Super I'm
         }

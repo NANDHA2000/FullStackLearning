@@ -1,10 +1,12 @@
-﻿using CSharp.OOP.OOP;
-using CSharp.OOP.SolidPrinciple;
+﻿using CSharp.ExpertPatterns.SolidPrinciple;
+using CSharp.OOP.OOP;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static CSharp.OOP.OOP.AbstractVsInterface;
+using static CSharp.OOP.OOP.Interface;
 
 namespace CSharpLearning.RunFile
 {
@@ -138,6 +140,14 @@ namespace CSharpLearning.RunFile
 
             #endregion
 
+            Console.WriteLine("\n---- Interface Demo ----");
+            InterfaceDemoExample.Run();
+
+
+            Console.WriteLine("\n---- Abstract Vs Interface Comparison ----");
+            AbstractVsInterfaceComparisonExample.Run();
+
         }
+
     }
 }
