@@ -46,6 +46,7 @@ namespace Program
             //RunCSharpCoding.RunLogicalProgram();
 
             RunCSharpIntermediate.RunIEnumerableVsIQueryable();
+            RunCSharpIntermediate.RunLinQ();
 
 
             //MatrixTransversal.DirectionalPatternMatchInGrid();
