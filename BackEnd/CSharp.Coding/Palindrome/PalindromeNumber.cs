@@ -9,7 +9,7 @@ namespace CSharp.Coding.Palindrome
     public class PalindromeNumber
     {
 
-        public void IsPalindromeNo()
+        public static void IsPalindromeNo()
         {
             int InputNumber = 1234321;
 
@@ -20,12 +20,13 @@ namespace CSharp.Coding.Palindrome
             for(int i = ReversedStr.Length - 1; i >= 0; i--)
             {
                 //Console.Write(ReversedStr[i]);
-                ReversedNumber += ReversedStr[i];
+                ReversedNumber = ReversedNumber + ReversedStr[i];
+                Console.WriteLine();
             }
 
             Console.WriteLine("Reversed Number: " + ReversedNumber);
 
-            if(ReversedNumber == InputNumber.ToString())
+            if(ReversedNumber == ReversedStr)
             {
                 Console.WriteLine("Input is Palindrome");
             }

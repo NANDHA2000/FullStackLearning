@@ -11,6 +11,31 @@ namespace CSharp.Coding.Duplicate
 
         public static void DuplicateFromStringEx() 
         {
+            string input = "welcome to programming world, everything you can imagine is real";  // Example string
+
+            string lowercase = input.ToLower();
+
+            for(char c = 'a'; c <= 'z'; c++)
+            {
+                int count = 0;
+                for(int i = 0; i < lowercase.Length; i++)
+                {
+                    if(lowercase[i] == c)
+                    {
+                        count++;  // Increment count if character matches
+                    }
+                }
+                if(count > 1)
+                {
+                    Console.WriteLine($"{c} – {count}");  // Print the letter and its count
+                }
+            }
+
+        }
+
+        #region Another Approach
+        /*public static void DuplicateFromStringEx() 
+        {
             string input = "welcome to programming world, everything you can imagine is real";
 
             Dictionary<char, int> charCount = new Dictionary<char, int>();
@@ -37,6 +62,7 @@ namespace CSharp.Coding.Duplicate
                 Console.WriteLine($"Character '{kvp.Key}' appears {kvp.Value} times.");
             }
 
-        }
+        }*/
+        #endregion
     }
 }

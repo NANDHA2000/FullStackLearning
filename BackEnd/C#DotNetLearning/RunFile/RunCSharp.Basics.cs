@@ -1,4 +1,6 @@
 ﻿using C_Basics_Fundamentals;
+using C_Basics_Fundamentals.Boxing_Unboxing;
+using C_Basics_Fundamentals.Casting;
 using C_Basics_Fundamentals.ControlFlowStatements;
 using C_Basics_Fundamentals.ExceptionHandling;
 using C_Basics_Fundamentals.Methods;
@@ -129,10 +131,21 @@ namespace CSharpLearning.RunFile
 
         }
 
+        //Boxing And Unboxing
+        public static void RunValueTypeAndReferenceType()
+        {
+            ValueTypeAndReferenceType.ValueRefTypeOrBoxingUnboxing();
+
+        }
 
 
+        //Casting
+        public static void RunCasting()
+        {
+            Casting.ImplicitCasting();
+            Casting.ExplicitCasting();
 
-
+        }
 
 
 

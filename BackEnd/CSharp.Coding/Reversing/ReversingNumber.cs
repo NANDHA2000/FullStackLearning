@@ -15,11 +15,14 @@ namespace CSharp.Coding.Reversing
 
             string ReversedNumber = InputNumber.ToString();
 
+            string FinalValue = "";
+
             for(int i = ReversedNumber.Length - 1; i >= 0; i--)
             {
-                Console.Write(ReversedNumber[i]);
+                FinalValue += ReversedNumber[i];
+                
             }
-
+            Console.Write($"Reversed Number : {FinalValue}");
 
             // Output : 654321
         }

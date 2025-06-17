@@ -9,7 +9,7 @@ namespace CSharp.Coding.CountOccurence
     public class CountOccurenceNumber
     {
 
-        public void CountNumberOccurence() 
+        public static void CountNumberOccurence() 
         {
             int inputNumber = 1234512345;  // Example number
 

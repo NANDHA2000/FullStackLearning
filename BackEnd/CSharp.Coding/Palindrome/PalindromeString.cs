@@ -9,23 +9,25 @@ namespace CSharp.Coding.Palindrome
     public class PalindromeString
     {
 
-        public void IsPalindrome()
+        public static void IsPalindrome()
         {
             string? OriginalInput = "Madam";
 
             string? ReversedInput = "";
 
-            char[] ReversedValue = OriginalInput.ToCharArray();
+            string LowerInput = OriginalInput.ToLower();
 
-            for(int i = ReversedValue.Length - 1; i >= 0; i--)
+            //char[] ReversedValue = OriginalInput.ToCharArray();
+
+            for(int i = LowerInput.Length - 1; i >= 0; i--)
             {
-                ReversedInput += ReversedValue[i];
+                ReversedInput += LowerInput[i];
 
             }
 
             //Console.Write(ReversedInput);
 
-            if(ReversedInput == OriginalInput)
+            if(ReversedInput == LowerInput)
             {
                 Console.WriteLine("Input is Palindrome");
             }

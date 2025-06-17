@@ -16,16 +16,29 @@ namespace CSharpLearning.RunFile
     public static class RunCSharpIntermediate
     {
 
+        #region RunLinQ
         //LinQ
+        public static void RunLinQ()
+        {
+            //LinqQuery.LinQ();
+            PracticalLinQ.Practical1();
+            PracticalLinQ.Practical2();
+        } 
+        #endregion
+
+
+        #region RunIEnumerableVsIQueryable
 
         public static void RunIEnumerableVsIQueryable()
         {
-            IEnumerableVsIQueryable.IEnumerable();
-            IEnumerableVsIQueryable.IQueryable();
-            LinqQuery.LinQ();
-        }
+            //IEnumerableVsIQueryable.IEnumerable();
+            //IEnumerableVsIQueryable.IQueryable();
+            
+        } 
+        #endregion
 
 
+        #region RunExtensionMethod
         public static void RunExtensionMethod()
         {
             string sentence = "Welcome to Dotnet Tutorials";
@@ -40,8 +53,10 @@ namespace CSharpLearning.RunFile
             Console.WriteLine($"Count : {numCount}");
             Console.ReadKey();
         }
+        #endregion
 
 
+        #region RunSelectOperator
         public static void RunSelectOperator()
         {
 
@@ -96,7 +111,10 @@ namespace CSharpLearning.RunFile
             Console.ReadKey();
 
         }
+        #endregion
 
+
+        #region RunGenericCollections & RunNonGenericCollections
         //Collections
 
         public static void RunGenericCollections()
@@ -168,7 +186,9 @@ namespace CSharpLearning.RunFile
                 Console.WriteLine(item);
             }
         }
+        #endregion
 
+        #region RunDelegatesAndEvents
         //Delegates & Events
 
         public static void RunDelegatesAndEvents()
@@ -182,16 +202,19 @@ namespace CSharpLearning.RunFile
             Console.ReadLine();
 
         }
+        #endregion
 
 
+        #region RunExtensionMehod
         //Extension Method
 
-        public static void RunExtensionMehod() 
+        public static void RunExtensionMehod()
         {
             string sentence = "Hello World!";
             Console.WriteLine($"Word Count: {sentence.WordCount()}");
 
-        }
+        } 
+        #endregion
 
     }
 }

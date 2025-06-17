@@ -9,7 +9,7 @@ namespace CSharp.Coding.CountOccurence
     public class CountOccurenceString
     {
 
-        public void CountStringOccurence() 
+        public static void CountStringOccurence() 
         {
             string input = "NANDHA";  // Example string
 

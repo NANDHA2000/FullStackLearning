@@ -23,6 +23,7 @@ namespace CSharp.Intermediate.Collections
 {
     public class NonGeneric
     {
+
         #region ArrayList
         public static ArrayList ArrayList()
         {
@@ -48,6 +49,7 @@ namespace CSharp.Intermediate.Collections
             table.Add(1, "One");
             table.Add(2, "Two");
             table.Add(3, "Three");
+            table.Add("3", "Three");
 
             foreach(var item in table)
             {
@@ -73,7 +75,7 @@ namespace CSharp.Intermediate.Collections
             }
 
             return sortedList;
-        } 
+        }
         #endregion
 
 

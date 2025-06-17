@@ -13,13 +13,15 @@ namespace CSharp.Coding.Reversing
         {
             string input = "Nandha";
 
-            char[] ReversedValue = input.ToCharArray();
+            string FinalValue = "";
 
-            for(int i = ReversedValue.Length - 1; i >= 0; i--)
+            //char[] ReversedValue = input.ToCharArray();
+
+            for(int i = input.Length - 1; i >= 0; i--)
             {
-                Console.WriteLine(ReversedValue[i]);
+                FinalValue = FinalValue + input[i];
             }
-
+            Console.WriteLine($"Reversed String : {FinalValue}");
 
             // Output : ahdnaN
 
