@@ -1,10 +1,18 @@
 ﻿/*
+ 
  Inheritance is a mechanism in object-oriented programming where one class (child or derived class) 
  acquires the properties and behaviors of another class (parent or base class)
 
  **  if we creating instance of object for Animal class only we will access that particular class methods 
      and properties We can able access but if you create for Dog or Cat u can able to access the Animal class 
      parent class.
+
+
+ **  -- Single inheritance → with classes (Child : Parent).
+    -- Multiple inheritance → only with interfaces (Child : IFather, IMother, IOther...).
+
+
+ ** Base class is used to refer as Parent class(base class) via child class(derived class)
  
  */
 
@@ -14,13 +22,13 @@ namespace CSharp.OOP.OOP
     {
 
         // Base class (Parent class)
-        public class Animal
+        public class Parent
         {
             public string? Name { get; set; }
 
             public void Eat()
             {
-                Console.WriteLine($"{Name} is eating.");
+                Console.WriteLine($"Parent -- {Name} is eating.");
             }
 
             public void Sleep()
@@ -30,21 +38,29 @@ namespace CSharp.OOP.OOP
         }
 
         // Derived class (Child class)
-        public class Dog : Animal
+        public class Child : Parent
         {
-            public void Bark()
+            public new void Eat()
             {
-                Console.WriteLine($"{Name} is barking: Woof! Woof!");
+                Console.WriteLine($"Child 1 -- {Name} is eating.");
+            }
+
+            public void PlayFootball()
+            {
+                Eat(); // Calls Child1's Eat method
+                base.Eat(); // Calls Parent's Eat method
+                Console.WriteLine($"{Name} is playing football.");
             }
         }
 
-        // Another Derived class
-        public class Cat : Animal
+/*        // Another Derived class
+        public class Child1 : Parent
         {
-            public void Meow()
+            public void PlayMusic()
             {
-                Console.WriteLine($"{Name} is meowing: Meow! Meow!");
+                Console.WriteLine($"{Name} is playing guitar.");
             }
-        }
+        }*/
+
     }
 }

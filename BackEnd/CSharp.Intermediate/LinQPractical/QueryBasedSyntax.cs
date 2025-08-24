@@ -1,16 +1,10 @@
 ﻿using CSharp.CommonUtils.Database.LinQ;
 using CSharp.CommonUtils.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp.Intermediate.LinQPractical
 {
     public class QueryBasedSyntax
     {
-
         private readonly List<Book> book = BookDatabase.GetBookDatabase();
 
         #region Select

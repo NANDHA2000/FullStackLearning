@@ -3,11 +3,7 @@ using CSharp.Coding.Duplicate;
 using CSharp.Coding.FibonacciSeries;
 using CSharp.Coding.Palindrome;
 using CSharp.Coding.Reversing;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CSharpLearning.RunFile
 {
@@ -17,22 +13,29 @@ namespace CSharpLearning.RunFile
         //LogicalProgram
         public static void RunLogicalProgram()
         {
-
+            Console.WriteLine("*** Count Numbers and Strings ***");
             CountOccurenceNumber.CountNumberOccurence();
+            Console.WriteLine("");
             CountOccurenceString.CountStringOccurence();
+            Console.WriteLine("");
+            CountOccurenceString.CountStringOccurenceLinq();
+            Console.WriteLine("");
 
-            PalindromeNumber.IsPalindromeNo();
-            PalindromeString.IsPalindrome();
+            /*            PalindromeNumber.IsPalindromeNo();
+                        PalindromeString.IsPalindrome();
 
-            ReversingString.ReversingInput();
-            ReversingNumber.ReversingNumbers();
-            Reversing.ReverseTheOrderOfWords();
+                        ReversingString.ReversingInput();
+                        ReversingNumber.ReversingNumbers();
+                        Reversing.ReverseTheOrderOfWords();
 
-            FibonacciSeries.FibonacciSeriesEx();
+                        FibonacciSeries.FibonacciSeriesEx();*/
 
 
-
+            Console.WriteLine("*** Duplicate Numbers and Strings ***");
             DuplicateFromString.DuplicateFromStringEx();
+            Console.WriteLine("");
+            DuplicateFromString.DuplicateFromStringLinq();
+            Console.WriteLine("");
         }
     }
 }

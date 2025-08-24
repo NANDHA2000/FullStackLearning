@@ -183,11 +183,12 @@
       class="card p-3 shadow-sm border-success"
     >
       <h5>Property Binding Example</h5>
-      <img [src]="imageUrl" alt="Angular Logo" height="60" />
+      <img [src]="imageUrl" alt="Angular Logo" height="60" width="100" />
       <p>
         <strong>Explanation:</strong> <code>[src]="imageUrl"</code> dynamically
         binds an image source.
       </p>
+      <input [value]="name" disabled>
     </div>
 
     <div
@@ -196,6 +197,8 @@
     >
       <h5>Event Binding Example</h5>
       <button class="btn btn-success" (click)="showAlert()">Click Me</button>
+      <button class="btn btn-danger" (input)="name">
+      </button>
       <p>
         <strong>Explanation:</strong> <code>(click)="showAlert()"</code> calls a
         component method on click.
@@ -263,5 +266,6 @@
         style dynamically.
       </p>
     </div>
+    
   </div>
 </div>

@@ -20,7 +20,7 @@ export class BindingComponent {
     { type: 'Style', syntax: '[style.prop]="value"', direction: 'Component → View', example: '[style.color]="color"' },
   ];
 
-  name: string = '';
+  name: string = 'Nandha';
   imageUrl: string = 'https://angular.io/assets/images/logos/angular/angular.png';
   colSpan: number = 2;
   isActive: boolean = true;

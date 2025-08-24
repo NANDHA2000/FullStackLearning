@@ -12,7 +12,7 @@ using CSharp.Intermediate.LinQ;
 using CSharpLearning.Loops;
 using CSharpLearning.Modifiers;
 using CSharpLearning.ParameterPassingMechanisms;
-using static CSharp.Basics.AccessModifiers.AccessModifiers;
+using static CSharp.OOP.AccessModifiers.AccessModifiers;
 
 namespace CSharpLearning.RunFile
 {
@@ -94,9 +94,13 @@ namespace CSharpLearning.RunFile
             PassByReference.Ref(ref value1);
             Console.WriteLine(value1);
 
-            int value2 = 5;
+            int value2 = 2;
             PassByReference.Out(out value2);
             Console.WriteLine(value2);
+
+            int value3 = 2;
+            PassByReference.In(in value3);
+            Console.WriteLine(value3);
 
         }
 

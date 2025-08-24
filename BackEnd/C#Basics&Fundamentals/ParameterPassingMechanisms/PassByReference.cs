@@ -34,6 +34,26 @@
 ✅ Syntax: void MethodName(out int parameter)
 
 
+-----------------*------------------------
+
+ 📌 in (Read-Only Reference Parameter)
+
+ ✅ Definition:
+
+     * Passes a variable by reference, but the method cannot modify it.
+     
+     * The variable must be initialized before being passed.
+
+     * Provides efficiency (avoids copying large structures) while ensuring immutability.
+
+ 💡 Use Case:
+
+      Use when you want to pass large objects/structs by reference for performance,
+      but you don’t want the method to modify them.
+
+ ✅ Syntax: void MethodName(in int parameter)
+
+
  */
 
 namespace CSharpLearning.Modifiers
@@ -43,15 +63,21 @@ namespace CSharpLearning.Modifiers
 
         public static void Ref(ref int x) 
         {
-            x = x + 10;
+            x = x + 10; // allowed to modify
             Console.WriteLine($"Sum of X for ref: {x}");
         }
 
 
         public static void Out(out int x)
         {
-            x = 0;
-            x = x + 10;
+            x = 2;  // must assign before using
+            x = x + 10; // allowed to modify
+            Console.WriteLine($"Sum of X for out: {x}");
+        }
+
+        public static void In(in int x)
+        {
+            // x = x + 10; ❌ Not allowed, in parameter is read-only
             Console.WriteLine($"Sum of X for out: {x}");
         }
     }

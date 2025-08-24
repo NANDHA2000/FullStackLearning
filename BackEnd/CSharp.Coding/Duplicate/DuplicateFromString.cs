@@ -33,6 +33,24 @@ namespace CSharp.Coding.Duplicate
 
         }
 
+
+        public static void DuplicateFromStringLinq() 
+        {
+            string input = "welcome to programming world, everything you can imagine is real";
+
+            var duplicates = input
+            .ToLower()
+            //.Where(char.IsLetter)                   // consider only letters
+            .GroupBy(c => c)                        // group by character
+            .Where(g => g.Count() > 1)              // only duplicates
+            .Select(g => new { Char = g.Key, Count = g.Count() });
+
+            foreach(var item in duplicates)
+            {
+                Console.WriteLine($"{item.Char} – {item.Count}");
+            }
+        }
+
         #region Another Approach
         /*public static void DuplicateFromStringEx() 
         {

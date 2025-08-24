@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*Single Responsibility Principle(SRP) --
+
+" Each class and modules in a program should focus on a single task " */
 
 namespace CSharp.ExpertPatterns.SolidPrinciple
 {
-
-    /*Single Responsibility Principle(SRP) --
-
-   " Each class and modules in a program should focus on a single task " */
-
     public class SingleResponsibilityPrinciple
     {
         #region SRP Code
-
 
         // Without SRP:
 
@@ -70,8 +62,6 @@ namespace CSharp.ExpertPatterns.SolidPrinciple
                 Console.WriteLine($"Email sent for order: {order}");
             }
         }
-
-
 
         #endregion
     }

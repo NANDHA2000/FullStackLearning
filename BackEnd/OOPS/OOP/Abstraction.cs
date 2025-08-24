@@ -4,15 +4,46 @@
 
     **** Abstract class: is a restricted class that cannot be used to create objects
     **** Only we can give definition to abstract class implementation we have to give to derived class.
- 
+
 */
+
+#region Def
+/* 1️⃣ Abstract Class
+Definition:
+** An abstract class is a class that cannot be instantiated.
+
+** It can have abstract methods (without body) and normal methods (with body).
+
+** It is used to provide a base definition for derived classes.
+
+
+2️⃣ Interface
+Definition:
+** An interface is a contract. It contains only declarations (no implementation).
+
+** Classes or structs implement interfaces and provide the actual behavior.
+
+
+| Feature                 | Abstract Class                               | Interface                                |
+| ----------------------- | -------------------------------------------- | ---------------------------------------- |
+| Methods                 | Can have both abstract & normal              | Only declarations (no code)              |
+| Variables               | Can have fields/variables                    | No variables (only properties/constants) |
+| Multiple inheritance    | Not supported                                | Supported (multiple interfaces)          |
+| Constructor             | Can have constructor                         | Cannot have constructor                  |
+| Accessibility Modifiers | Can have modifiers (public, protected, etc.) | All members are public by default        | 
+#endregion
+
+*/
+#endregion
 
 namespace CSharp.OOP.OOP
 {
 
-    // Abstraction in C# (Using Abstract Class)
-    public class Abstraction
+    
+    public static class Abstraction
     {
+
+        // Abstraction in C# (Using Abstract Class)
 
         public abstract class Animal
         {
@@ -27,7 +58,7 @@ namespace CSharp.OOP.OOP
         }
 
         public class Dog : Animal
-        {
+        { 
             public override void MakeSound()
             {
                 Console.WriteLine("Woof! Woof!");
@@ -41,42 +72,39 @@ namespace CSharp.OOP.OOP
                 Console.WriteLine("Meow! Meow!");
             }
         }
-    }
 
 
-    // Abstraction in C# (Using Interface)
+        // Abstraction in C# (Using Interface)
 
 
-    public interface IVehicle
-    {
-        void StartEngine();
-        void StopEngine();
-    }
-
-    // Concrete class implementing the interface
-    public class Car : IVehicle
-    {
-        public void StartEngine()
+        public interface IAnimal
         {
-            Console.WriteLine("Car engine started.");
+            void MakeSound();
+            void Sleep();
         }
 
-        public void StopEngine()
+        public class DogInterface : IAnimal
         {
-            Console.WriteLine("Car engine stopped.");
+            public void MakeSound()
+            {
+                Console.WriteLine("Woof! Woof!");
+            }
+            public void Sleep()
+            {
+                Console.WriteLine("Dog is sleeping.");
+            }
         }
-    }
 
-    public class Bike : IVehicle
-    {
-        public void StartEngine()
+        public class CatInterface : IAnimal
         {
-            Console.WriteLine("Bike engine started.");
-        }
-
-        public void StopEngine()
-        {
-            Console.WriteLine("Bike engine stopped.");
+            public void MakeSound()
+            {
+                Console.WriteLine("Meow! Meow!");
+            }
+            public void Sleep()
+            {
+                Console.WriteLine("Cat is sleeping.");
+            }
         }
     }
 

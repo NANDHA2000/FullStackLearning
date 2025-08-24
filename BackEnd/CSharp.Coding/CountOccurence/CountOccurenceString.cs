@@ -9,7 +9,7 @@ namespace CSharp.Coding.CountOccurence
     public class CountOccurenceString
     {
 
-        public static void CountStringOccurence() 
+        public static void CountStringOccurence()
         {
             string input = "NANDHA";  // Example string
 
@@ -36,6 +36,19 @@ namespace CSharp.Coding.CountOccurence
                         d - 1
                         h - 1
             */
+        }
+
+        public static void CountStringOccurenceLinq()
+        {
+            string input = "NANDHA";
+            var occurrences = input
+                .ToLower()
+                .GroupBy(c => c) // Group by character
+                .Select(g => new { Char = g.Key, Count = g.Count() }); // Create anonymous objects with character and its count
+            foreach (var item in occurrences)
+            {
+                Console.WriteLine($"{item.Char} – {item.Count}");
+            }
         }
     }
 }

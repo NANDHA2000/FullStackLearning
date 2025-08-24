@@ -12,7 +12,7 @@
 
 namespace CSharp.OOP.OOP
 {
-    public class Polymorphism
+    public static class Polymorphism
     {
 
         #region Method Overloading
@@ -29,14 +29,14 @@ namespace CSharp.OOP.OOP
 */
 
 
-        public class MethodOverLoading
+        public static class MethodOverLoading
         {
-            public int Addition(int a, int b)
+            public static int Addition(int a, int b)
             {
                 return a + b;
             }
 
-            public int Addition(int a, int b, int c)
+            public static int Addition(int a, int b, int c)
             {
                 return a + b + c;
             }
@@ -57,7 +57,7 @@ namespace CSharp.OOP.OOP
                - Method return type must be same
 */
 
-        public class MethodOverRiding
+        public static class MethodOverRiding
         {
             public class ParentClass
             {
@@ -74,8 +74,6 @@ namespace CSharp.OOP.OOP
                     Console.WriteLine("The child primary job is :" + job);
                 }
             }
-
-
 
         } 
         #endregion

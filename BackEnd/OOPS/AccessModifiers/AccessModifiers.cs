@@ -19,7 +19,7 @@ private protected	     Same class or derived class in the same assembly
  
  */
 
-namespace CSharp.Basics.AccessModifiers
+namespace CSharp.OOP.AccessModifiers
 {
     public class AccessModifiers
     {
@@ -100,20 +100,20 @@ namespace CSharp.Basics.AccessModifiers
             {
                 // Access to members from the derived class
 
-                this.num1 = 1;    // ✅ public - accessible
-                                  // this.num2 = 2; // ❌ private - not accessible
-                this.num3 = 3;    // ✅ protected - accessible
-                this.num4 = 4;    // ✅ internal - accessible (same assembly)
-                this.num5 = 5;    // ✅ protected internal - accessible
-                this.num6 = 6;    // ✅ private protected - accessible (derived + same assembly)
+                num1 = 1;    // ✅ public - accessible
+                             // this.num2 = 2; // ❌ private - not accessible
+                num3 = 3;    // ✅ protected - accessible
+                num4 = 4;    // ✅ internal - accessible (same assembly)
+                num5 = 5;    // ✅ protected internal - accessible
+                num6 = 6;    // ✅ private protected - accessible (derived + same assembly)
 
                 // Call methods
-                this.publicMethod();             // ✅ public - accessible
+                publicMethod();             // ✅ public - accessible
                 //this.privateMethod();            // ❌ private - not accessible
-                this.protectedMethod();          // ✅ protected - accessible
-                this.internalMethod();           // ✅ internal - accessible
-                this.protectedInternalMethod();  // ✅ protected internal - accessible
-                this.privateProtectedMethod();   // ✅ private protected - accessible
+                protectedMethod();          // ✅ protected - accessible
+                internalMethod();           // ✅ internal - accessible
+                protectedInternalMethod();  // ✅ protected internal - accessible
+                privateProtectedMethod();   // ✅ private protected - accessible
 
 
             }

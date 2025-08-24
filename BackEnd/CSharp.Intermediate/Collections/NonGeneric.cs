@@ -68,6 +68,7 @@ namespace CSharp.Intermediate.Collections
             SortedList sortedList = new SortedList();
             sortedList.Add("2", "Beta");
             sortedList.Add("1", "Alpha");
+            sortedList.Add(1, "Alpha");
 
             foreach(DictionaryEntry item in sortedList)
             {
