@@ -47,6 +47,8 @@ namespace Program
                 RunCSharpCoding.RunLogicalProgram();
 
 
+            RunCSharpIntermediate.RunIEnumerableVsIQueryable();
+            RunCSharpIntermediate.RunLinQ();
             //RunCSharpRealWorld
                 RunCSharpRealWorld.RunFindCurrentAgeOfStudent();
 
