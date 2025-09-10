@@ -1,7 +1,7 @@
-﻿using CSharp.CommonUtils.Models;
+﻿using CSharp.Advanced.LinQ;
+using CSharp.CommonUtils.Models;
 using CSharp.Intermediate.Collections;
 using CSharp.Intermediate.ExtensionMethod;
-using CSharp.Intermediate.LinQ;
 using CSharpLearning.Modifiers;
 using CSharpLearning.ParameterPassingMechanisms;
 using System;
@@ -39,7 +39,7 @@ namespace CSharpLearning.RunFile
 
 
         #region RunExtensionMethod
-        public static void RunExtensionMethod()
+/*        public static void RunExtensionMethod()
         {
             string sentence = "Welcome to Dotnet Tutorials";
 
@@ -52,7 +52,7 @@ namespace CSharpLearning.RunFile
             int numCount = number.GetNumberCount();
             Console.WriteLine($"Count : {numCount}");
             Console.ReadKey();
-        }
+        }*/
         #endregion
 
 
@@ -208,7 +208,7 @@ namespace CSharpLearning.RunFile
         #region RunExtensionMehod
         //Extension Method
 
-        public static void RunExtensionMehod()
+        public static void RunExtensionMethod()
         {
             string sentence = "Hello World!";
             Console.WriteLine($"Word Count: {sentence.WordCount()}");

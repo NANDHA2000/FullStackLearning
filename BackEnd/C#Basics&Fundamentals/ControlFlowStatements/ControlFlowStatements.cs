@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace C_Basics_Fundamentals.ControlFlowStatements
+﻿namespace C_Basics_Fundamentals.ControlFlowStatements
 {
     public class ControlFlowStatements
     {
+
+            private readonly static int num = 10;
+
             public static void ControlFlowStatementsEx()
             {
-            int num = 7;
+            
 
             // if
             if(num > 0)
@@ -60,12 +57,12 @@ namespace C_Basics_Fundamentals.ControlFlowStatements
 
             // do-while loop
             Console.WriteLine("Do-While loop:");
-            int k = 0;
+            int l = 0;
             do
             {
-                Console.WriteLine(k);
-                k++;
-            } while(k < 2);
+                Console.WriteLine(l);
+                l++;
+            } while(l < 2);
 
             // foreach loop
             Console.WriteLine("Foreach loop:");
@@ -73,6 +70,16 @@ namespace C_Basics_Fundamentals.ControlFlowStatements
             foreach(var item in arr)
             {
                 Console.WriteLine(item);
+            }
+
+            //Nested ForLoop
+            Console.WriteLine("Nested Foreach loop:");
+            for(int n = 1; n <= 3; n++)
+            {
+                for(int k = 1; k <= 3; k++)
+                {
+                    Console.WriteLine($"n = {n}, k = {k}");
+                }
             }
         }
     }

@@ -12,5 +12,9 @@ namespace CSharp.CommonUtils.Models
         public string? Name { get; set; }
         public string? Gender { get; set; }
         public string? Class { get; set; }
+
+        public int Marks { get; set; }
+        public int? CompareTo(Student other) => Marks.CompareTo(other.Marks);
+
     }
 }

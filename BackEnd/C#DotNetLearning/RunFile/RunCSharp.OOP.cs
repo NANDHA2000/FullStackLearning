@@ -1,5 +1,7 @@
-﻿using CSharp.ExpertPatterns.SolidPrinciple;
+﻿using CSharp.OOP.ClassMembers;
 using CSharp.OOP.OOP;
+using static CSharp.OOP.ClassMembers.Nested;
+using static CSharp.OOP.ClassMembers.Sealed;
 
 namespace CSharpLearning.RunFile
 {
@@ -75,6 +77,38 @@ namespace CSharpLearning.RunFile
 
             #endregion
 
+            #region Class Memebers
+            Console.WriteLine("\n---- Class Memebers Demo ----");
+            Console.WriteLine("\n---- Sealed Class Demo ----");
+
+            BankAccount account = new BankAccount();
+            account.Deposit(500);
+
+            Parent parent = new Parent();
+            parent.Work();   // Calls Parent method
+
+            Child child = new Child();
+            child.Work();    // Calls sealed override
+
+
+            Console.WriteLine("\n---- Partial Class Demo ----");
+            Partial.Person person = new Partial.Person();
+            person.FirstName = "Nandha";
+            person.LastName = "Kumar";
+            person.PrintFullName();
+
+
+            Console.WriteLine("\n---- Nested Class Demo ----");
+
+            // Using nested class directly
+            OuterClass.InnerClass inner = new OuterClass.InnerClass();
+            inner.ShowInner();
+
+            // Using nested class to access outer data
+            OuterClass outer = new OuterClass();
+            OuterClass.Helper helper = new OuterClass.Helper(outer);
+            helper.ShowOuterMessage(); 
+            #endregion
 
         }
 

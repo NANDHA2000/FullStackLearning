@@ -19,12 +19,19 @@ namespace CSharp.Advanced.Generics
 {
     public class Generics
     {
+
+        // Generic class
         public class Box<T>
         {
-            public T Value { get; set; }
-            public void ShowType() => Console.WriteLine($"Type of T is: {typeof(T)}");
+            public T? Value { get; set; }
+
+            public void ShowType()
+            {
+                Console.WriteLine($"Value: {Value}, Type: {typeof(T)}\n");
+            }
         }
 
+        // Generic Method
         public class GenericUtils
         {
             public static void Swap<T>(ref T a, ref T b)
@@ -34,6 +41,8 @@ namespace CSharp.Advanced.Generics
                 b = temp;
             }
         }
+
+        // Generic Constraint(Restrict T)
 
         public class Calculator<T> where T : struct
         {

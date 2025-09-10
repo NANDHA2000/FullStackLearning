@@ -9,48 +9,53 @@ namespace Program
         {
 
 
-            //RunCSharpOOP
-                 RunCSharpOOP.RunOops();
+            ////RunCSharpOOP
+            //     RunCSharpOOP.RunOops();
+
+            ////RunCSharpExpertPatterns
+            //    RunCSharpExpertPatterns.RunSolidPrinciple();
 
 
-            //RunCSharpExpertPatterns
-                RunCSharpExpertPatterns.RunSolidPrinciple();
+            ////RunCSharpBasics
+
+            //    RunCSharpBasics.RunAccessModifiers();
+            //    RunCSharpBasics.RunControlFlowStatements();
+            //    RunCSharpBasics.RunExceptionHandling();
+            //    RunCSharpBasics.RunLogicalProgram();
+            //    RunCSharpBasics.RunMethods();
+            //    RunCSharpBasics.RunOperators();
+            //    RunCSharpBasics.RunParameterPassingMechanisms();
+            //    RunCSharpBasics.RunVariablesAndDataTypes();
+            //    RunCSharpBasics.RunValueTypeAndReferenceType();
+            //    RunCSharpBasics.RunCasting();
 
 
-            //RunCSharpBasics
-                RunCSharpBasics.RunAccessModifiers();
-                RunCSharpBasics.RunBasicOOP();
-                RunCSharpBasics.RunControlFlowStatements();
-                RunCSharpBasics.RunExceptionHandling();
-                RunCSharpBasics.RunLogicalProgram();
-                RunCSharpBasics.RunMethods();
-                RunCSharpBasics.RunOperators();
-                RunCSharpBasics.RunParameterPassingMechanisms();
-                RunCSharpBasics.RunVariablesAndDataTypes();
-                RunCSharpBasics.RunValueTypeAndReferenceType();
-                RunCSharpBasics.RunCasting();
+            ////RunCSharpIntermediate
+            //    RunCSharpIntermediate.RunGenericCollections();
+            //    RunCSharpIntermediate.RunNonGenericCollections();
+            //    RunCSharpIntermediate.RunIEnumerableVsIQueryable();
+            //    RunCSharpIntermediate.RunDelegatesAndEvents();
+            //    RunCSharpIntermediate.RunExtensionMethod();
+            //    RunCSharpIntermediate.RunSelectOperator();
+            //    RunCSharpIntermediate.RunLinQ();
+
+            //RunCSharpAdvanced
+
+                RunCSharpAdvanced.RunMultithreadingTaskParallelism();
+                RunCSharpAdvanced.RunGenerics();
+                RunCSharpAdvanced.RunSerializationAndDeserialization();
+                RunCSharpAdvanced.RunLinqConcepts();
 
 
-            //RunCSharpIntermediate
-                RunCSharpIntermediate.RunGenericCollections();
-                RunCSharpIntermediate.RunNonGenericCollections();
-                RunCSharpIntermediate.RunIEnumerableVsIQueryable();
-                RunCSharpIntermediate.RunDelegatesAndEvents();
-                RunCSharpIntermediate.RunExtensionMethod();
-                RunCSharpIntermediate.RunSelectOperator();
-                RunCSharpIntermediate.RunSelectOperator();
-                RunCSharpIntermediate.RunIEnumerableVsIQueryable();
 
-                       
-
-            //RunCSharpCoding
-                RunCSharpCoding.RunLogicalProgram();
+            ////RunCSharpCoding
+            //    RunCSharpCoding.RunLogicalProgram();
 
 
-            RunCSharpIntermediate.RunIEnumerableVsIQueryable();
-            RunCSharpIntermediate.RunLinQ();
-            //RunCSharpRealWorld
-                RunCSharpRealWorld.RunFindCurrentAgeOfStudent();
+
+
+            ////RunCSharpRealWorld
+            //    RunCSharpRealWorld.RunFindCurrentAgeOfStudent();
 
 
             /*MatrixTransversal.DirectionalPatternMatchInGrid();

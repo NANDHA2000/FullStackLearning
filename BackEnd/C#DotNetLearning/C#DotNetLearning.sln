@@ -14,6 +14,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Intermediate", "..\CSharp.Intermediate\CSharp.Intermediate.csproj", "{8900197E-E646-43F7-998C-6F735C3AE711}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Advanced", "..\CSharp.Advanced\CSharp.Advanced.csproj", "{5AFA8594-3F0F-47AC-9B7D-C9BBE60013D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FE9EE29E-DBB0-4323-B1E2-40BB2E820503} = {FE9EE29E-DBB0-4323-B1E2-40BB2E820503}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.RealWorld", "..\CSharp.RealWorld\CSharp.RealWorld.csproj", "{A4EFF952-0DE3-4BD1-92B8-B7A3C8316FB5}"
 EndProject

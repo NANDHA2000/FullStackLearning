@@ -21,14 +21,14 @@ namespace CSharpLearning.RunFile
             CountOccurenceString.CountStringOccurenceLinq();
             Console.WriteLine("");
 
-            /*            PalindromeNumber.IsPalindromeNo();
-                        PalindromeString.IsPalindrome();
+            PalindromeNumber.IsPalindromeNo();
+            PalindromeString.IsPalindrome();
 
-                        ReversingString.ReversingInput();
-                        ReversingNumber.ReversingNumbers();
-                        Reversing.ReverseTheOrderOfWords();
+            ReversingString.ReversingInput();
+            ReversingNumber.ReversingNumbers();
+            Reversing.ReverseTheOrderOfWords();
 
-                        FibonacciSeries.FibonacciSeriesEx();*/
+            FibonacciSeries.FibonacciSeriesEx();
 
 
             Console.WriteLine("*** Duplicate Numbers and Strings ***");

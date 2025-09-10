@@ -5,11 +5,8 @@ using C_Basics_Fundamentals.ControlFlowStatements;
 using C_Basics_Fundamentals.ExceptionHandling;
 using C_Basics_Fundamentals.Methods;
 using C_Basics_Fundamentals.Operators;
-using C_Basics_Fundamentals.Variables;
 using CSharp.Coding.DifLogicalProgram;
 using CSharp.Coding.Swapping;
-using CSharp.Intermediate.LinQ;
-using CSharpLearning.Loops;
 using CSharpLearning.Modifiers;
 using CSharpLearning.ParameterPassingMechanisms;
 using static CSharp.OOP.AccessModifiers.AccessModifiers;
@@ -36,17 +33,11 @@ namespace CSharpLearning.RunFile
 
         }
 
-        //Basic OOPs
-        public static void RunBasicOOP()
-        {
-            ForLoop.ExecForLoop();
-        }
 
         //ControlFlowStatements
         public static void RunControlFlowStatements()
         {
             ControlFlowStatements.ControlFlowStatementsEx();
-            ForLoop.ExecForLoop();
         }
 
         //ExceptionHandling
@@ -150,12 +141,6 @@ namespace CSharpLearning.RunFile
             Casting.ExplicitCasting();
 
         }
-
-
-
-
-
-
 
     }
 }
