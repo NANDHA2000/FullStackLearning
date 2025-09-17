@@ -16,7 +16,7 @@
  
  */
 
-namespace CSharp.OOP.OOP
+namespace CSharp.OOP.OOPs
 {
     public class Inheritance
     {
@@ -47,7 +47,7 @@ namespace CSharp.OOP.OOP
 
             public void PlayFootball()
             {
-                base.Name = "Nandha";
+                Name = "Nandha";
                 Eat(); // Calls Child1's Eat method
                 //base.Eat(); // Calls Parent's Eat method
                 Console.WriteLine($"{Name} is playing football.");

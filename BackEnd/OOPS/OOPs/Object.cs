@@ -10,7 +10,7 @@ using System.Threading.Tasks;
       ** It has its own state (data) and can perform actions via methods.
  */
 
-namespace CSharp.OOP.OOP
+namespace CSharp.OOP.OOPs
 {
     public class Object : Class
     {

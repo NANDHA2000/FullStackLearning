@@ -1,4 +1,4 @@
-﻿using CSharp.RealWorld.InterviewCodingQA;
+﻿using CSharp.Coding.InterviewCodingQA;
 
 namespace CSharpLearning.RunFile
 {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp.ExpertPatterns.SolidPrinciple
+﻿namespace CSharp.ExpertPatterns.SolidPrinciple
 {
     /*
          Open Closed Principle (OCP) 

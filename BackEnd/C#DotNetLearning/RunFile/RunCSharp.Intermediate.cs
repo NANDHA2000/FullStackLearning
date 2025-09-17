@@ -21,8 +21,8 @@ namespace CSharpLearning.RunFile
         public static void RunLinQ()
         {
             //LinqQuery.LinQ();
-            PracticalLinQ.Practical1();
-            PracticalLinQ.Practical2();
+            //PracticalLinQ.Practical1();
+            //PracticalLinQ.Practical2();
         } 
         #endregion
 
@@ -57,7 +57,7 @@ namespace CSharpLearning.RunFile
 
 
         #region RunSelectOperator
-        public static void RunSelectOperator()
+        /*public static void RunSelectOperator()
         {
 
             //Using Query Syntax
@@ -110,7 +110,7 @@ namespace CSharpLearning.RunFile
             }
             Console.ReadKey();
 
-        }
+        }*/
         #endregion
 
 

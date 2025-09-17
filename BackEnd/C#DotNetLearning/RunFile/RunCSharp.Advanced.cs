@@ -1,8 +1,6 @@
 ﻿using CSharp.Advanced.LinqConcepts;
 using CSharp.Advanced.MultithreadingAndTaskParallelism;
 using CSharp.Advanced.SerializationDeserialization;
-using CSharp.OOP.OOP;
-using System.Diagnostics;
 using static CSharp.Advanced.Generics.Generics;
 
 namespace CSharpLearning.RunFile

@@ -1,4 +1,4 @@
-﻿namespace CSharp.RealWorld.InterviewCodingQA
+﻿namespace CSharp.Coding.InterviewCodingQA
 {
     public class FindCurrentAgeOfStudent
     {

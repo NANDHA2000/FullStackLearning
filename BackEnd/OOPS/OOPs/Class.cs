@@ -7,7 +7,7 @@
 
  */
 
-namespace CSharp.OOP.OOP
+namespace CSharp.OOP.OOPs
 {
     public class Class
     {

@@ -1,7 +1,7 @@
 ﻿using CSharp.CommonUtils.Database;
 using CSharp.CommonUtils.Models;
 
-namespace CSharp.Advanced.LinQPractical
+namespace CSharp.Advanced.LinqTypes
 {
     public class MethodBasedSyntax
     {

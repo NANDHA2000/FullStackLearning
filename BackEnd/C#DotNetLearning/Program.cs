@@ -1,87 +1,102 @@
-﻿using CSharpLearning.RunFile;
-
+﻿using CSharp.CommonUtils.Enum;
+using CSharpLearning.RunFile;
 
 namespace Program
 {
+    #region ExecutionClass
+    public class ExecutionClass
+    {
+        public static void RunAdvanced()
+        {
+            RunCSharpAdvanced.RunMultithreadingTaskParallelism();
+            RunCSharpAdvanced.RunGenerics();
+            RunCSharpAdvanced.RunSerializationAndDeserialization();
+            RunCSharpAdvanced.RunLinqConcepts();
+        }
+
+        public static void RunBasics()
+        {
+            RunCSharpBasics.RunAccessModifiers();
+            RunCSharpBasics.RunControlFlowStatements();
+            RunCSharpBasics.RunExceptionHandling();
+            RunCSharpBasics.RunLogicalProgram();
+            RunCSharpBasics.RunMethods();
+            RunCSharpBasics.RunOperators();
+            RunCSharpBasics.RunParameterPassingMechanisms();
+            RunCSharpBasics.RunVariablesAndDataTypes();
+            RunCSharpBasics.RunValueTypeAndReferenceType();
+            RunCSharpBasics.RunCasting();
+        }
+
+        public static void RunCoding()
+        {
+            RunCSharpCoding.RunLogicalProgram();
+        }
+
+        public static void RunExpertPatterns()
+        {
+            RunCSharpExpertPatterns.RunSolidPrinciple();
+            RunCSharpExpertPatterns.RunDesignPattern();
+        }
+
+        public static void RunIntermediate()
+        {
+            RunCSharpIntermediate.RunGenericCollections();
+            RunCSharpIntermediate.RunNonGenericCollections();
+            RunCSharpIntermediate.RunIEnumerableVsIQueryable();
+            RunCSharpIntermediate.RunDelegatesAndEvents();
+            RunCSharpIntermediate.RunExtensionMethod();
+            RunCSharpIntermediate.RunLinQ();
+        }
+
+        public static void RunOOP()
+        {
+            RunCSharpOOP.RunOops();
+        }
+
+        public static void RunRealWorld()
+        {
+            RunCSharpRealWorld.RunFindCurrentAgeOfStudent();
+        }
+
+    } 
+    #endregion
+
     class Program
     {
         public static void Main(string[] args)
         {
 
+            int moduleToRun = 4;
 
-            ////RunCSharpOOP
-            //     RunCSharpOOP.RunOops();
-
-            ////RunCSharpExpertPatterns
-            //    RunCSharpExpertPatterns.RunSolidPrinciple();
-
-
-            ////RunCSharpBasics
-
-            //    RunCSharpBasics.RunAccessModifiers();
-            //    RunCSharpBasics.RunControlFlowStatements();
-            //    RunCSharpBasics.RunExceptionHandling();
-            //    RunCSharpBasics.RunLogicalProgram();
-            //    RunCSharpBasics.RunMethods();
-            //    RunCSharpBasics.RunOperators();
-            //    RunCSharpBasics.RunParameterPassingMechanisms();
-            //    RunCSharpBasics.RunVariablesAndDataTypes();
-            //    RunCSharpBasics.RunValueTypeAndReferenceType();
-            //    RunCSharpBasics.RunCasting();
-
-
-            ////RunCSharpIntermediate
-            //    RunCSharpIntermediate.RunGenericCollections();
-            //    RunCSharpIntermediate.RunNonGenericCollections();
-            //    RunCSharpIntermediate.RunIEnumerableVsIQueryable();
-            //    RunCSharpIntermediate.RunDelegatesAndEvents();
-            //    RunCSharpIntermediate.RunExtensionMethod();
-            //    RunCSharpIntermediate.RunSelectOperator();
-            //    RunCSharpIntermediate.RunLinQ();
-
-            //RunCSharpAdvanced
-
-                RunCSharpAdvanced.RunMultithreadingTaskParallelism();
-                RunCSharpAdvanced.RunGenerics();
-                RunCSharpAdvanced.RunSerializationAndDeserialization();
-                RunCSharpAdvanced.RunLinqConcepts();
-
-
-
-            ////RunCSharpCoding
-            //    RunCSharpCoding.RunLogicalProgram();
-
-
-
-
-            ////RunCSharpRealWorld
-            //    RunCSharpRealWorld.RunFindCurrentAgeOfStudent();
-
-
-            /*MatrixTransversal.DirectionalPatternMatchInGrid();
-
-           var result = MatrixTransversal.DirectionalPatternMatchInGrid();
-
-                        Console.WriteLine("\nFinal Pattern Matches:");
-                        foreach(var kvp in result)
-                        {
-                            Console.WriteLine($"{kvp.Key}: {kvp.Value}");
-                        }*/
-
-            /*
-                        AnonymousMethods anonymousMethods = new AnonymousMethods();
-
-                        AnonymousMethods.PointToMethod operations = anonymousMethods.Add;
-
-                        operations(1,2);
-                        anonymousMethods.Add(1, 2);
-
-
-                        OriginalClass originalClass = new OriginalClass();
-                        originalClass.Id = 1;
-
-                        PartialClass1 partialClass1 = new PartialClass1();
-                        partialClass1.*/
+            switch(moduleToRun)
+            {
+                case (int)ExecutionEnum.Advanced:
+                    ExecutionClass.RunAdvanced();
+                    break;
+                case (int)ExecutionEnum.Basics:
+                    ExecutionClass.RunBasics();
+                    break;
+                case (int)ExecutionEnum.Coding:
+                    ExecutionClass.RunCoding();
+                    break;
+                case (int)ExecutionEnum.ExpertPatterns:
+                    ExecutionClass.RunExpertPatterns();
+                    break;
+                case (int)ExecutionEnum.Intermediate:
+                    ExecutionClass.RunIntermediate();
+                    break;
+                case (int)ExecutionEnum.OOP:
+                    ExecutionClass.RunOOP();
+                    break;
+                case (int)ExecutionEnum.RealWorld:
+                    ExecutionClass.RunRealWorld();
+                    break;
+                default:
+                    Console.WriteLine("Unknown module. Please specify one of the following: " +
+                        "basics, intermediate, advanced, expertpatterns, oop, coding, realworld.");
+                    break;
+            }
 
         }
 
