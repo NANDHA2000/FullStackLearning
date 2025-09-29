@@ -24,6 +24,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.ExpertPatterns", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Coding", "..\CSharp.Coding\CSharp.Coding.csproj", "{E42A480E-7F49-427A-A1B7-FF45C75CE01E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#DotNetLearningAF", "..\C#DotNetLearningAF\C#DotNetLearningAF.csproj", "{1BBDC8CE-40C9-494B-8CCB-06F0B9BB1948}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Web", "..\CSharp.Web\CSharp.Web.csproj", "{02A37FBF-85F9-436E-B2BA-FB9CE9D7D9FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +70,14 @@ Global
 		{E42A480E-7F49-427A-A1B7-FF45C75CE01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E42A480E-7F49-427A-A1B7-FF45C75CE01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E42A480E-7F49-427A-A1B7-FF45C75CE01E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BBDC8CE-40C9-494B-8CCB-06F0B9BB1948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BBDC8CE-40C9-494B-8CCB-06F0B9BB1948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BBDC8CE-40C9-494B-8CCB-06F0B9BB1948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BBDC8CE-40C9-494B-8CCB-06F0B9BB1948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A37FBF-85F9-436E-B2BA-FB9CE9D7D9FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A37FBF-85F9-436E-B2BA-FB9CE9D7D9FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A37FBF-85F9-436E-B2BA-FB9CE9D7D9FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A37FBF-85F9-436E-B2BA-FB9CE9D7D9FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

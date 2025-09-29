@@ -1,104 +1,47 @@
 ﻿using CSharp.CommonUtils.Enum;
-using CSharpLearning.RunFile;
+using CSharpLearning;
 
 namespace Program
 {
-    #region ExecutionClass
-    public class ExecutionClass
-    {
-        public static void RunAdvanced()
+        public interface IExecutionService
         {
-            RunCSharpAdvanced.RunMultithreadingTaskParallelism();
-            RunCSharpAdvanced.RunGenerics();
-            RunCSharpAdvanced.RunSerializationAndDeserialization();
-            RunCSharpAdvanced.RunLinqConcepts();
+            Task RunAsync(ExecutionEnum module);
         }
 
-        public static void RunBasics()
+        public class ExecutionService : IExecutionService
         {
-            RunCSharpBasics.RunAccessModifiers();
-            RunCSharpBasics.RunControlFlowStatements();
-            RunCSharpBasics.RunExceptionHandling();
-            RunCSharpBasics.RunLogicalProgram();
-            RunCSharpBasics.RunMethods();
-            RunCSharpBasics.RunOperators();
-            RunCSharpBasics.RunParameterPassingMechanisms();
-            RunCSharpBasics.RunVariablesAndDataTypes();
-            RunCSharpBasics.RunValueTypeAndReferenceType();
-            RunCSharpBasics.RunCasting();
-        }
-
-        public static void RunCoding()
-        {
-            RunCSharpCoding.RunLogicalProgram();
-        }
-
-        public static void RunExpertPatterns()
-        {
-            RunCSharpExpertPatterns.RunSolidPrinciple();
-            RunCSharpExpertPatterns.RunDesignPattern();
-        }
-
-        public static void RunIntermediate()
-        {
-            RunCSharpIntermediate.RunGenericCollections();
-            RunCSharpIntermediate.RunNonGenericCollections();
-            RunCSharpIntermediate.RunIEnumerableVsIQueryable();
-            RunCSharpIntermediate.RunDelegatesAndEvents();
-            RunCSharpIntermediate.RunExtensionMethod();
-            RunCSharpIntermediate.RunLinQ();
-        }
-
-        public static void RunOOP()
-        {
-            RunCSharpOOP.RunOops();
-        }
-
-        public static void RunRealWorld()
-        {
-            RunCSharpRealWorld.RunFindCurrentAgeOfStudent();
-        }
-
-    } 
-    #endregion
-
-    class Program
-    {
-        public static void Main(string[] args)
-        {
-
-            int moduleToRun = 4;
-
-            switch(moduleToRun)
+            public async Task RunAsync(ExecutionEnum module)
             {
-                case (int)ExecutionEnum.Advanced:
-                    ExecutionClass.RunAdvanced();
-                    break;
-                case (int)ExecutionEnum.Basics:
-                    ExecutionClass.RunBasics();
-                    break;
-                case (int)ExecutionEnum.Coding:
-                    ExecutionClass.RunCoding();
-                    break;
-                case (int)ExecutionEnum.ExpertPatterns:
-                    ExecutionClass.RunExpertPatterns();
-                    break;
-                case (int)ExecutionEnum.Intermediate:
-                    ExecutionClass.RunIntermediate();
-                    break;
-                case (int)ExecutionEnum.OOP:
-                    ExecutionClass.RunOOP();
-                    break;
-                case (int)ExecutionEnum.RealWorld:
-                    ExecutionClass.RunRealWorld();
-                    break;
-                default:
-                    Console.WriteLine("Unknown module. Please specify one of the following: " +
-                        "basics, intermediate, advanced, expertpatterns, oop, coding, realworld.");
-                    break;
+                switch(module)
+                {
+                    case ExecutionEnum.Advanced:
+                        ExecutionClass.RunAdvanced();
+                        break;
+                    case ExecutionEnum.Basics:
+                        ExecutionClass.RunBasics();
+                        break;
+                    case ExecutionEnum.Coding:
+                        ExecutionClass.RunCoding();
+                        break;
+                    case ExecutionEnum.ExpertPatterns:
+                        ExecutionClass.RunExpertPatterns();
+                        break;
+                    case ExecutionEnum.Intermediate:
+                        ExecutionClass.RunIntermediate();
+                        break;
+                    case ExecutionEnum.OOP:
+                        ExecutionClass.RunOOP();
+                        break;
+                    case ExecutionEnum.RealWorld:
+                        ExecutionClass.RunRealWorld();
+                        break;
+                    case ExecutionEnum.Web:
+                        await Task.Run(() => ExecutionClass.RunWeb());
+                        break;
+                    default:
+                        throw new ArgumentException("Invalid module");
+                }
             }
-
         }
 
-    }
 }

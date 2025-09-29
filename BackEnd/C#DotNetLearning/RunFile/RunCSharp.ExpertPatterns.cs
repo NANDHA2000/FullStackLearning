@@ -1,6 +1,7 @@
 ﻿using CSharp.CommonUtils.Models;
 using CSharp.ExpertPatterns.DesignPattern.Creational;
 using CSharp.ExpertPatterns.SolidPrinciple;
+using static CSharp.ExpertPatterns.DesignPattern.Creational.FactoryMethod;
 
 namespace CSharpLearning.RunFile
 {
@@ -146,8 +147,23 @@ namespace CSharpLearning.RunFile
             Console.WriteLine("\nDeep Clone: " + deepClone);
 
 
-            Console.WriteLine("\n---- **** ----"); 
+            Console.WriteLine("\n---- **** ----");
             #endregion
+
+
+            #region Factory Method
+            Console.WriteLine("Enter vehicle type (Car / Bike):");
+            string input = Console.ReadLine()!;
+
+            IVehicle vehicle = VehicleFactory.GetVehicle(input!);
+            vehicle.Drive();
+
+            Console.ReadLine(); 
+
+
+
+            #endregion
+
 
 
         }

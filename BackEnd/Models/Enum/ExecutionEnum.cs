@@ -8,6 +8,7 @@
         ExpertPatterns = 4,
         Intermediate = 5,
         OOP = 6,
-        RealWorld = 7
+        RealWorld = 7,
+        Web = 8
     }
 }

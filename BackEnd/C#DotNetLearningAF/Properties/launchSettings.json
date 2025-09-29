@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "C_DotNetLearningAF": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7197",
+      "launchBrowser": false
+    }
+  }
+}

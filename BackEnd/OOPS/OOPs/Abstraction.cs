@@ -43,6 +43,7 @@ namespace CSharp.OOP.OOPs
     public static class Abstraction
     {
 
+        #region Abstract
         // Abstraction in C# (Using Abstract Class)
 
         public abstract class Animal
@@ -58,7 +59,7 @@ namespace CSharp.OOP.OOPs
         }
 
         public class Dog : Animal
-        { 
+        {
             public override void MakeSound()
             {
                 Console.WriteLine("Woof! Woof!");
@@ -72,8 +73,10 @@ namespace CSharp.OOP.OOPs
                 Console.WriteLine("Meow! Meow!");
             }
         }
+        #endregion
 
 
+        #region Interface
         // Abstraction in C# (Using Interface)
 
 
@@ -105,7 +108,8 @@ namespace CSharp.OOP.OOPs
             {
                 Console.WriteLine("Cat is sleeping.");
             }
-        }
+        } 
+        #endregion
     }
 
 }
