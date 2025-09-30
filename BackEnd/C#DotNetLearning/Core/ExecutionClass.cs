@@ -1,6 +1,6 @@
 ﻿using CSharpLearning.RunFile;
 
-namespace CSharpLearning
+namespace CSharpLearning.Core
 {
     public class ExecutionClass
     {

@@ -1,47 +1,39 @@
 ﻿using CSharp.CommonUtils.Enum;
-using CSharpLearning;
+using CSharpLearning.Interfaces;
+using CSharpLearning.Services;
 
-namespace Program
+namespace CSharpLearning
 {
-        public interface IExecutionService
-        {
-            Task RunAsync(ExecutionEnum module);
-        }
+    // Entry point
+    class Program
+    {
 
-        public class ExecutionService : IExecutionService
+        public static async Task Main(string[] args)
         {
-            public async Task RunAsync(ExecutionEnum module)
+            Console.WriteLine("Select module to run:");
+            foreach(var module in Enum.GetValues<ExecutionEnum>())
             {
-                switch(module)
-                {
-                    case ExecutionEnum.Advanced:
-                        ExecutionClass.RunAdvanced();
-                        break;
-                    case ExecutionEnum.Basics:
-                        ExecutionClass.RunBasics();
-                        break;
-                    case ExecutionEnum.Coding:
-                        ExecutionClass.RunCoding();
-                        break;
-                    case ExecutionEnum.ExpertPatterns:
-                        ExecutionClass.RunExpertPatterns();
-                        break;
-                    case ExecutionEnum.Intermediate:
-                        ExecutionClass.RunIntermediate();
-                        break;
-                    case ExecutionEnum.OOP:
-                        ExecutionClass.RunOOP();
-                        break;
-                    case ExecutionEnum.RealWorld:
-                        ExecutionClass.RunRealWorld();
-                        break;
-                    case ExecutionEnum.Web:
-                        await Task.Run(() => ExecutionClass.RunWeb());
-                        break;
-                    default:
-                        throw new ArgumentException("Invalid module");
-                }
+                Console.WriteLine($"{(int)module} - {module}");
             }
-        }
 
+            Console.Write("Enter module number: ");
+            var input = Console.ReadLine();
+
+            if(int.TryParse(input, out int moduleInt) &&
+                Enum.IsDefined(typeof(ExecutionEnum), moduleInt))
+            {
+                var module = (ExecutionEnum)moduleInt;
+                IExecutionService executor = new ExecutionService();
+                await executor.RunAsync(module);
+            }
+            else
+            {
+                Console.WriteLine("Invalid module selected!");
+            }
+
+
+            Console.WriteLine("Execution completed. Press any key to exit...");
+            Console.ReadKey();
+        }
+    }
 }
