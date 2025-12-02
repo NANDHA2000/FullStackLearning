@@ -1,12 +1,5 @@
 ﻿using CSharp.CommonUtils.Database.LinQ;
 using CSharp.CommonUtils.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp.Intermediate.LinQ
 {

@@ -1,15 +1,8 @@
 ﻿using CSharp.CommonUtils.Models;
 using CSharp.Intermediate.Collections;
+using CSharp.Intermediate.Delegates;
 using CSharp.Intermediate.ExtensionMethod;
 using CSharp.Intermediate.LinQ;
-using CSharpLearning.Modifiers;
-using CSharpLearning.ParameterPassingMechanisms;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static CSharp.Intermediate.Delegates.BasicDelegates;
 
 namespace CSharpLearning.RunFile
 {
@@ -193,15 +186,12 @@ namespace CSharpLearning.RunFile
 
         public static void RunDelegatesAndEvents()
         {
-            // 3️⃣ Create an instance of the delegate
-            PrintMessage del = ShowMessage;
+            SinglecastDelegate.RunSinglecastDelegate();
 
-            // 4️⃣ Call the method using delegate
-            del("Hello from Delegate!");
-
-            Console.ReadLine();
+            CSharp.Intermediate.Delegates.MulticastDelegate.RunMulticastDelegate();
 
         }
+
         #endregion
 
 

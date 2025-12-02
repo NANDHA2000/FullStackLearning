@@ -1,6 +1,6 @@
 ﻿using CSharp.CommonUtils.Models;
 
-namespace CSharp.CommonUtils.Database.LinQ
+namespace CSharp.Database.Database.LinQ
 {
     public class BookDatabase
     {

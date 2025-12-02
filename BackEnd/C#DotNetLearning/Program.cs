@@ -14,9 +14,10 @@ namespace Program
     {
         public static void Main(string[] args)
         {
+            RunCSharpIntermediate.RunDelegatesAndEvents();
 
-
-            /*RunCSharpOOP.RunOops();
+            /*
+            RunCSharpOOP.RunOops();
             RunCSharpOOP.RunSolidPrinciple();
 
             RunCSharpBasics.RunAccessModifiers();
@@ -45,8 +46,8 @@ namespace Program
 
             //RunCSharpCoding.RunLogicalProgram();
 
-            RunCSharpIntermediate.RunIEnumerableVsIQueryable();
-            RunCSharpIntermediate.RunLinQ();
+/*            RunCSharpIntermediate.RunIEnumerableVsIQueryable();
+            RunCSharpIntermediate.RunLinQ();*/
 
 
             //MatrixTransversal.DirectionalPatternMatchInGrid();
