@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>DotNetMastery</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetMastery.Advanced\DotNetMastery.Advanced.csproj" />
+    <ProjectReference Include="..\DotNetMastery.Basics\DotNetMastery.Basics.csproj" />
+    <ProjectReference Include="..\DotNetMastery.Coding\DotNetMastery.Coding.csproj" />
+    <ProjectReference Include="..\DotNetMastery.CommonUtils\DotNetMastery.CommonUtils.csproj" />
+    <ProjectReference Include="..\DotNetMastery.ExpertPatterns\DotNetMastery.ExpertPatterns.csproj" />
+    <ProjectReference Include="..\DotNetMastery.Intermediate\DotNetMastery.Intermediate.csproj" />
+    <ProjectReference Include="..\DotNetMastery.OOPS\DotNetMastery.OOP.csproj" />
+  </ItemGroup>
+
+</Project>
