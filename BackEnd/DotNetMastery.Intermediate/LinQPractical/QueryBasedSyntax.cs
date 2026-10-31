@@ -1,4 +1,4 @@
-﻿using DotNetMastery.CommonUtils.Database.LinQ;
+﻿using DotNetMastery.CommonUtils.DataSources;
 using DotNetMastery.CommonUtils.Models;
 
 namespace DotNetMastery.Intermediate.LinQPractical
@@ -6,7 +6,7 @@ namespace DotNetMastery.Intermediate.LinQPractical
     public class QueryBasedSyntax
     {
 
-        private readonly List<Book> book = BookDatabase.GetBookDatabase();
+        private readonly List<Book> book = BookDataSource.GetBookList();
 
         #region Select
         // 1.Select 

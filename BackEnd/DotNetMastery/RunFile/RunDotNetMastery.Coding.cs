@@ -8,8 +8,7 @@ using DotNetMastery.Coding.CustomPuzzles.ProblemStatementProgram;
 using DotNetMastery.Coding.StringLogic.CountOccurence;
 using DotNetMastery.Coding.StringLogic.Palindrome;
 using DotNetMastery.Coding.StringLogic.Reversing;
-using DotNetMastery.CommonUtils.Database.DotNetMastery.CommonUtils.DataSources;
-using DotNetMastery.CommonUtils.Database.LinQ;
+using DotNetMastery.CommonUtils.DataSources;
 
 namespace DotNetMastery.RunFile
 {

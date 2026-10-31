@@ -1,13 +1,10 @@
 ﻿using DotNetMastery.CommonUtils.Models;
 
-namespace DotNetMastery.CommonUtils.Database.LinQ
+namespace DotNetMastery.CommonUtils.DataSources
 {
-    public class BookDatabase
+    public static class BookDataSource
     {
-
-        public static List<Book> GetBookDatabase() 
-        {
-        return new List<Book>
+        public static List<Book> GetBookList() => new List<Book>
         {
             new Book { ID = 1, Title = "C# in Depth", Author = "Jon Skeet", Genre = "Programming", YearPublished = 2019, Price = 45.50 },
             new Book { ID = 2, Title = "Clean Code", Author = "Robert C. Martin", Genre = "Programming", YearPublished = 2008, Price = 39.99 },
@@ -17,7 +14,7 @@ namespace DotNetMastery.CommonUtils.Database.LinQ
             new Book { ID = 6, Title = "1984", Author = "George Orwell", Genre = "Dystopian", YearPublished = 1949, Price = 19.99 },
             new Book { ID = 7, Title = "To Kill a Mockingbird", Author = "Harper Lee", Genre = "Classic", YearPublished = 1960, Price = 22.50 }
         };
-        }
-        
+
+        public static Book[] GetBookArray() => GetBookList().ToArray();
     }
 }

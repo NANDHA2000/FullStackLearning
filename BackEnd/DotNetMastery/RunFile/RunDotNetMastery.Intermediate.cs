@@ -158,16 +158,23 @@ namespace DotNetMastery.RunFile
 
         public static void RunNonGenericCollections()
         {
+            //Array
+            var array = NonGeneric.Array();
+            foreach (var item in array)
+            {
+                Console.WriteLine(item);
+            }
+
             //ArrayList
-            var list = NonGeneric.ArrayList();
-            foreach(var item in list)
+            var arrayList = NonGeneric.ArrayList();
+            foreach(var item in arrayList)
             {
                 Console.WriteLine(item);
             }
 
             //Hashtable
-            var table = NonGeneric.Hashtable();
-            foreach(var item in table)
+            var hashtable = NonGeneric.Hashtable();
+            foreach(var item in hashtable)
             {
                 Console.WriteLine(item);
             }

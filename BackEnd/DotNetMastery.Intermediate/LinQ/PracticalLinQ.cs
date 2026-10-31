@@ -1,4 +1,4 @@
-﻿using DotNetMastery.CommonUtils.Database.LinQ;
+﻿using DotNetMastery.CommonUtils.DataSources;
 using DotNetMastery.CommonUtils.Models;
 
 namespace DotNetMastery.Intermediate.LinQ
@@ -9,7 +9,7 @@ namespace DotNetMastery.Intermediate.LinQ
         {
             // INTERVIEW QUESTION 
 
-            var person = PersonDatabase.GetPersonDatabase();
+            var person = PersonDataSource.GetPersonList();
 
             string search = "hi";
             var result = person
