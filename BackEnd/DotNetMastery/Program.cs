@@ -5,20 +5,24 @@ namespace DotNetMastery
 {
     class Program
     {
-        public static void Main(string[] args)
+        public async static Task Main(string[] args)
         {
 
 
+            //RunCSharpRealworld.RunSecurity();
+            await RunCSharpRealworld.RunRestApiCrudAsync();
+
             // === C# BASICS RUNNER METHODS ===
             //RunCSharpBasics.RunAccessModifiers();
-            RunCSharpBasics.RunControlFlowStatements();
-            RunCSharpBasics.RunExceptionHandling();
-            RunCSharpBasics.RunFountations();
-            RunCSharpBasics.RunMethods();
-            RunCSharpBasics.RunTypeConversion();
+            /*            RunCSharpBasics.RunControlFlowStatements();
+                        RunCSharpBasics.RunExceptionHandling();
+                        RunCSharpBasics.RunFountations();
+                        RunCSharpBasics.RunMethods();
+                        RunCSharpBasics.RunTypeConversion();*/
 
 
-
+            /*            RunCSharpIntermediate.RunGenericCollections();
+                        RunDotNetMasteryIntermediate.RunGenericCollections();*/
 
 
             /*RunCSharpIntermediate.RunDelegatesAndEvents();
@@ -49,12 +53,12 @@ namespace DotNetMastery
             RunCSharpIntermediate.RunSelectOperator();
             RunCSharpIntermediate.RunSelectOperator();*/
 
-            
+
 
             //RunCSharpCoding.RunLogicalProgram();
 
-/*            RunCSharpIntermediate.RunIEnumerableVsIQueryable();
-            RunCSharpIntermediate.RunLinQ();*/
+            /*            RunCSharpIntermediate.RunIEnumerableVsIQueryable();
+                        RunCSharpIntermediate.RunLinQ();*/
 
 
             //MatrixTransversal.DirectionalPatternMatchInGrid();
